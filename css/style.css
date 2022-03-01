@@ -594,6 +594,7 @@ a, a:active, a:focus, a:hover {
 .product-deal-head {
     margin-bottom: 8px;
 }
+
 .product-deal-head .product-card{
     align-items: center;
     display: block;
@@ -609,13 +610,43 @@ a, a:active, a:focus, a:hover {
 .product-img{
     align-items: center;
     display: flex;
-  
+    left: 0;
     justify-content: center;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
 
+}
+.out-of-stock{
+    position: absolute;
+    align-items: center;
+    background: #3e3939;
+    text-align: center;
+    border-radius: 60px;
+    box-shadow: 0 0 0 2px #fff;
+    color: #fff;
+    display: flex;
+    height: 66px;
+    left: 27%;
+    padding: 2px;
+    top: 32%;
+    z-index: 10;
+    width: 102px;
+    font-size: 18px;
+}
+.bg-stock{
+    background-color: #12121357;
+    position: absolute;
+    margin: -5px;
+    z-index: 3;
+    width: 235px;
+    height: 233px;
+    opacity: initial;
+    flex: auto;
+}
+.stock{
+    position: relative;
 }
 .product-tag {
     align-items: center;
@@ -735,7 +766,7 @@ a, a:active, a:focus, a:hover {
     margin-left: 45px;
 }
 .nav-tabs{
-    margin-left: 72px;
+    margin-left: 12%;
     margin-top: -10px;
     border-bottom: none !important;
 }
@@ -1220,4 +1251,11 @@ a, a:active, a:focus, a:hover {
     line-height: 19px;
     margin-bottom: 8px;
     text-transform: uppercase;
+}
+.img-germany img{
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    margin-left: 17%;
+    height: 390px;
 }
