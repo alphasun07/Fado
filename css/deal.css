@@ -98,3 +98,64 @@
 .product-img-decor .img-fluid {
     max-width: 48%;
 }
+.notranslate ul .icon-home{
+    position: relative;
+
+}
+.notranslate ul{
+    list-style: none;    
+    padding: 0 !important;
+}
+.notranslate ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.notranslate ul .after-sloid::after{
+    border-right: 1px solid #cfd5de;
+    content: "";
+    height: 20px;
+    margin-top: -10px;
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: rotate(20deg);
+    width: 1px;
+    z-index: 2;
+}
+.notranslate ul .dr-home:hover{
+    cursor: pointer;
+}
+.notranslate ul .cl-detail{
+    color: #6d6b6b;
+}
+.main-detail-section .image-slider{
+    border-radius: 10px;
+    border: 1px solid #303846;
+    padding-bottom: 16px;
+}
+.main-detail-section .swiper-wrapper img{
+    width: 90%;
+    padding: 8px;
+    margin-left: 5%;
+}
+.main-detail-section .product-name{
+    display: inline;
+    font-size: 14px;
+    line-height: 21px;
+    word-break: break-word;
+}
+.main-detail-section .brand-segment .name-outer::after{
+    content: "・";
+    padding: 0 3px 0 3px;
+}
+.main-detail-section .brand-segment, .review{
+    font-size: 13px;
+}
+.product-detail{
+    color: #504b4b;
+}
+.rating-star{
+    color: #2e2e2e;
+    font-size: 13px;
+}
