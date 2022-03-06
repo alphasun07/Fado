@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/deal.css">
 </head>
 <body>
-     <!-- nav -->
+    <div class="wrapper">
+         <!-- nav -->
     <section id="header-section" class="header-section" >
         <div class="section-body">
             <!-- main-block -->
@@ -147,7 +148,7 @@
     </section>
 
     <!-- notranslate -->
-    <section class="notranslate d-flex">
+    <section  class="notranslate d-flex">
         <div class="container">
             <ul class="mt-3">
                 <li class="icon-home after-sloid">
@@ -176,277 +177,372 @@
            
         </div>
     </section>
+
+    <!--product scroll  -->
+    <section id="product-scroll-section" class="product-scroll-section headroom headroom--not-top ">
+        <div class="container">
+            <div class="product-scroll-section__inner">
+                <!-- price -->
+                <div class="product-scroll-1 d-flex">
+                    <div class="price-type-segment">Nhập khẩu tiêu dùng</div>
+                    <div class="price-segment">
+                        <div class="price-segment__curr-price-panel">
+                            <span class="curr-price">
+                                3,0170,000<sup>đ</sup>
+                            </span>
+                        </div>
+                        <div class="price-segment__old-price-panel">
+                            <span class="old-price">3,509,00 <sup>đ</sup></span>
+                            <span class="mx-2">|</span>
+                            <span><b>14% OFF</b></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart -->
+                <div class="product-scroll-2">
+                    <div class="cart-segment d-flex mt-4">
+                        <div class="quantity-control-group">
+                            <div class="down-btn down-btn-head " disabled>-</div>
+                            <input type="text" class="quantity-input mx-1 text-light" value="1" readonly>
+                            <div class="up-btn down-btn-head">+</div>
+                        </div>
+                        <div class="btn btn-light cart-shared mx-3 cart-online">MUA NGAY</div>
+                        <div class="btn btn-light cart-shared mx-1 cart-this">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                           <b>Giỏ hàng   </b>           
+                        </div>
+                        <div class="control-group">
+                            <button title="Thêm vào giỏ hàng" class="btn add-cart">
+                                <i class="bi bi-cart-plus"></i>                                                
+                            </button>
+                            <button title="Thêm vào yêu thích" class="btn favorite-btn">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>        
+    </section>
     
     <!-- main detail -->
     <section class="main-detail-section ">
         <div class="container d-flex">
-            <div class="col-md-5 img-fluid">
-                <div class="image-slider">
-                    <div class="swiper-slide">
-                        <div class="swiper-wrapper">
-                            <a href="#">
-                                <img src="img/deal/casi-sheen.jpg" alt="">
-                            </a>
+            <div class="col-md-10 d-flex">
+                <div class="col-md-6 img-fluid col-cor">
+                    <div class="image-slider">
+                        <div class="swiper-slide">
+                            <div class="swiper-wrapper">
+                                <a href="#">
+                                    <img src="img/deal/casi-sheen.jpg" alt="">
+                                </a>
+                            </div>
+                            
                         </div>
-                        
                     </div>
                 </div>
-            </div>
-
-            <!-- details content -->
-            <div class="col-md-5 mx-3 product-detail ">
-                <div class="product-name-segment mb-2">
-                    <h1 class="product-name">Casio Sheen SHE-4534PGL-2A - Đồng Hồ Nữ - Pin/Quartz - Size Mặt 34mm - Kính Sapphire - Chính Hãng 100%</h1>
-                </div>
-                <div class="brand-segment d-flex mb-1">
-                    <div class="name-outer">
-                        <span class="text-dark">Thương hiệu: </span>Việt Nam
+    
+                <!-- details content -->
+                <div class="col-md-6 product-detail ">
+                    <div class="product-name-segment mb-2">
+                        <h1 class="product-name">Casio Sheen SHE-4534PGL-2A - Đồng Hồ Nữ - Pin/Quartz - Size Mặt 34mm - Kính Sapphire - Chính Hãng 100%</h1>
                     </div>
-                    <div class="name-outer">
-                        <span class="text-dark">Bán tại: </span>Việt Nam
+                    <div class="brand-segment d-flex mb-1">
+                        <div class="name-outer">
+                            <span class="text-dark">Thương hiệu: </span>Việt Nam
+                        </div>
+                        <div class="name-outer">
+                            <span class="text-dark">Bán tại: </span>Việt Nam
+                        </div>
+                        <div class="">
+                            <span class="text-dark">Tình trạng: </span>New
+                        </div>
                     </div>
-                    <div class="">
-                        <span class="text-dark">Tình trạng: </span>New
-                    </div>
-                </div>
-                <!-- rating -->
-                <div class="rating-segment">
-                    <div class="rating-number d-flex">
-                        <b>5.0</b>
-                        <div class="rating-group d-flex mx-2">
-                            <div class="rating-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                    <!-- rating -->
+                    <div class="rating-segment">
+                        <div class="rating-number d-flex">
+                            <b>5.0</b>
+                            <div class="rating-group d-flex mx-2">
+                                <div class="rating-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review">(1120 đánh giá)</div>
+                        </div>
+                        <div class="favorite-compare-control d-flex justify-content-end">
+                            <button class="favorite-tym mx-4">
+                                <div class="icon"><i class="bi bi-heart"></i></div>
+                            </button>
+                            <div class="favorite-compare">
+                                <div class="icon"></div><i class="fa-solid fa-code-compare"></i></div>
                             </div>
                         </div>
-                        <div class="review">(1120 đánh giá)</div>
-                    </div>
-                    <div class="favorite-compare-control d-flex justify-content-end">
-                        <button class="favorite-tym mx-4">
-                            <div class="icon"><i class="bi bi-heart"></i></div>
-                        </button>
-                        <div class="favorite-compare">
-                            <div class="icon"></div><i class="fa-solid fa-code-compare"></i></div>
-                        </div>
-                    </div>
-                    <div class="change-price-tab"></div>
-
-                    <a href="login.html" class="d-flex alert-login-segment">
-                        <div class="alert-login-icon">
-                            <img src="	https://stfe.fadoglobal.io/desktop/image/svg/icon-discount-bag-v2.svg" alt="">
-                        </div>
-                        <div class="alert-login-text">
-                            Đăng nhập hoặc đăng ký để mua hàng và nhận thêm nhiều ưu đãi hấp dẫn dành riêng cho thành viên Fado
-                        </div>
-                        <div class="alert-login-right-icon">
-                            <i class="fa-solid fa-angle-right"></i>                        
-                        </div>
-                    </a>
-
-                    <!-- benifit box -->
-                    <div class="benefit-box">
-                        <div class="benefit-segment">
-                            <a href="#" class="benefit-row hover-effect">
-                                Nhận ưu đãi <span class="fw-bold">lên đến 6%</span> khi tham gia <span>Fado VIPClub</span>
-                            </a>
-                            <a href="#" class="benefit-row hover-effect">
-                                <span class="fw-bold">Giảm 1% </span>trên đơn hàng (tối đa 200,000đ) khi thanh toán bằng<span class="fw-bold"> FadoPay</span>
-                            </a>
-                            <a href="#" class="benefit-row hover-effect">
-                                Đổi trả sản phầm 24 giờ<span> Chi tiết</span>
-                            </a>
-                            <div class="benefit-row">Sản phẩm có sẵn tại Việt Nam</div>
-                            <div class="benefit-bod"></div>
-                        </div>
-
-                        <div class="benefit-segment notranslate d-flex " type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="benefit-discount">
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog ">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Mã giảm giá</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <!-- modal body -->
-                                            <div class="modal-body">
-                                                <div class="discount-modal-list">
-                                                    <div class="discount-item d-flex">
-                                                        <div class="discount-item-content">
-                                                            <!-- modal content head -->
-                                                            <div class="discount-item-head">
-                                                                <div class="discount-item-avatar">
-                                                                    <img src="	https://static.fado.vn/f/desktop/v2/images-temp/icon-discount/2.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <!--  modal content body -->
-                                                            <div class="discount-item-body">
-                                                                <div class="discount-item-row d-flex">
-                                                                    <div class="discount-item-title">Giảm 50,000đ</div>
-                                                                    <div class="discount-item-tootip"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                                </div>
-                                                                <div class="discount-item-row middle">Cho đơn hàng từ 499K</div>
-                                                                <div class="discount-item-row bottom">
-                                                                    <div class="discount-item-time">HSD: 07-03-2022</div>
-                                                                    <div class="discount-item-control">
-                                                                        <button class="btn btn-dark">Lưu</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="discount-item-background">
-                                                            <img src="https://stfe.fadoglobal.io/desktop/image/svg/discount-bg-type-1.svg" alt="">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="discount-item d-flex">
-                                                        <div class="discount-item-content">
-                                                            <!-- modal content head -->
-                                                            <div class="discount-item-head">
-                                                                <div class="discount-item-avatar">
-                                                                    <img src="	https://static.fado.vn/f/desktop/v2/images-temp/icon-discount/2.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <!--  modal content body -->
-                                                            <div class="discount-item-body">
-                                                                <div class="discount-item-row d-flex">
-                                                                    <div class="discount-item-title">Giảm 100,000đ</div>
-                                                                    <div class="discount-item-tootip"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                                </div>
-                                                                <div class="discount-item-row middle">Cho đơn hàng từ 999K</div>
-                                                                <div class="discount-item-row bottom">
-                                                                    <div class="discount-item-time">HSD: 07-03-2022</div>
-                                                                    <div class="discount-item-control">
-                                                                        <button class="btn btn-dark">Lưu</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="discount-item-background">
-                                                            <img src="https://stfe.fadoglobal.io/desktop/image/svg/discount-bg-type-1.svg" alt="">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="discount-item d-flex">
-                                                        <div class="discount-item-content">
-                                                            <!-- modal content head -->
-                                                            <div class="discount-item-head">
-                                                                <div class="discount-item-avatar">
-                                                                    <img src="	https://static.fado.vn/f/desktop/v2/images-temp/icon-discount/2.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <!--  modal content body -->
-                                                            <div class="discount-item-body">
-                                                                <div class="discount-item-row d-flex">
-                                                                    <div class="discount-item-title">Giảm 250,000đ</div>
-                                                                    <div class="discount-item-tootip"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                                </div>
-                                                                <div class="discount-item-row middle">Cho đơn hàng từ 2M</div>
-                                                                <div class="discount-item-row bottom">
-                                                                    <div class="discount-item-time">HSD: 07-03-2022</div>
-                                                                    <div class="discount-item-control">
-                                                                        <button class="btn btn-dark">Lưu</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="discount-item-background">
-                                                            <img src="https://stfe.fadoglobal.io/desktop/image/svg/discount-bg-type-1.svg" alt="">
-                                                        </div>
-                                                    </div>
-
+                        <div class="change-price-tab"></div>
+    
+                        <a href="login.html" class="d-flex alert-login-segment">
+                            <div class="alert-login-icon">
+                                <img src="	https://stfe.fadoglobal.io/desktop/image/svg/icon-discount-bag-v2.svg" alt="">
+                            </div>
+                            <div class="alert-login-text">
+                                Đăng nhập hoặc đăng ký để mua hàng và nhận thêm nhiều ưu đãi hấp dẫn dành riêng cho thành viên Fado
+                            </div>
+                            <div class="alert-login-right-icon">
+                                <i class="fa-solid fa-angle-right"></i>                        
+                            </div>
+                        </a>
+    
+                        <!-- benifit box -->
+                        <div class="benefit-box">
+                            <div class="benefit-segment">
+                                <a href="#" class="benefit-row hover-effect">
+                                    Nhận ưu đãi <span class="fw-bold">lên đến 6%</span> khi tham gia <span>Fado VIPClub</span>
+                                </a>
+                                <a href="#" class="benefit-row hover-effect">
+                                    <span class="fw-bold">Giảm 1% </span>trên đơn hàng (tối đa 200,000đ) khi thanh toán bằng<span class="fw-bold"> FadoPay</span>
+                                </a>
+                                <a href="#" class="benefit-row hover-effect">
+                                    Đổi trả sản phầm 24 giờ<span> Chi tiết</span>
+                                </a>
+                                <div class="benefit-row">Sản phẩm có sẵn tại Việt Nam</div>
+                                <div class="benefit-bod"></div>
+                            </div>
+    
+                            <div class="benefit-segment notranslate d-flex " type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="benefit-discount">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog ">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Mã giảm giá</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
+                                                <!-- modal body -->
+                                                <div class="modal-body">
+                                                    <div class="discount-modal-list">
+                                                        <div class="discount-item d-flex">
+                                                            <div class="discount-item-content">
+                                                                <!-- modal content head -->
+                                                                <div class="discount-item-head">
+                                                                    <div class="discount-item-avatar">
+                                                                        <img src="	https://static.fado.vn/f/desktop/v2/images-temp/icon-discount/2.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <!--  modal content body -->
+                                                                <div class="discount-item-body">
+                                                                    <div class="discount-item-row d-flex">
+                                                                        <div class="discount-item-title">Giảm 50,000đ</div>
+                                                                        <div class="discount-item-tootip"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                                    </div>
+                                                                    <div class="discount-item-row middle">Cho đơn hàng từ 499K</div>
+                                                                    <div class="discount-item-row bottom">
+                                                                        <div class="discount-item-time">HSD: 07-03-2022</div>
+                                                                        <div class="discount-item-control">
+                                                                            <button class="btn btn-dark">Lưu</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+    
+                                                            <div class="discount-item-background">
+                                                                <img src="https://stfe.fadoglobal.io/desktop/image/svg/discount-bg-type-1.svg" alt="">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="discount-item d-flex">
+                                                            <div class="discount-item-content">
+                                                                <!-- modal content head -->
+                                                                <div class="discount-item-head">
+                                                                    <div class="discount-item-avatar">
+                                                                        <img src="	https://static.fado.vn/f/desktop/v2/images-temp/icon-discount/2.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <!--  modal content body -->
+                                                                <div class="discount-item-body">
+                                                                    <div class="discount-item-row d-flex">
+                                                                        <div class="discount-item-title">Giảm 100,000đ</div>
+                                                                        <div class="discount-item-tootip"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                                    </div>
+                                                                    <div class="discount-item-row middle">Cho đơn hàng từ 999K</div>
+                                                                    <div class="discount-item-row bottom">
+                                                                        <div class="discount-item-time">HSD: 07-03-2022</div>
+                                                                        <div class="discount-item-control">
+                                                                            <button class="btn btn-dark">Lưu</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+    
+                                                            <div class="discount-item-background">
+                                                                <img src="https://stfe.fadoglobal.io/desktop/image/svg/discount-bg-type-1.svg" alt="">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="discount-item d-flex">
+                                                            <div class="discount-item-content">
+                                                                <!-- modal content head -->
+                                                                <div class="discount-item-head">
+                                                                    <div class="discount-item-avatar">
+                                                                        <img src="	https://static.fado.vn/f/desktop/v2/images-temp/icon-discount/2.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <!--  modal content body -->
+                                                                <div class="discount-item-body">
+                                                                    <div class="discount-item-row d-flex">
+                                                                        <div class="discount-item-title">Giảm 250,000đ</div>
+                                                                        <div class="discount-item-tootip"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                                    </div>
+                                                                    <div class="discount-item-row middle">Cho đơn hàng từ 2M</div>
+                                                                    <div class="discount-item-row bottom">
+                                                                        <div class="discount-item-time">HSD: 07-03-2022</div>
+                                                                        <div class="discount-item-control">
+                                                                            <button class="btn btn-dark">Lưu</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+    
+                                                            <div class="discount-item-background">
+                                                                <img src="https://stfe.fadoglobal.io/desktop/image/svg/discount-bg-type-1.svg" alt="">
+                                                            </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- dicount -->
-                            <div class="benefit-discount-list d-flex">
-                                <div class="benefit-discount-item">
-                                    <div class="benefit-discount-item-text">
-                                        Giảm 50,000đ
+                                <!-- dicount -->
+                                <div class="benefit-discount-list d-flex">
+                                    <div class="benefit-discount-item">
+                                        <div class="benefit-discount-item-text">
+                                            Giảm 50,000đ
+                                        </div>
+                                    </div>
+                                    <div class="benefit-discount-item">
+                                        <div class="benefit-discount-item-text">
+                                            Giảm 100,000đ
+                                        </div>
+                                    </div>
+                                    <div class="benefit-discount-item">
+                                        <div class="benefit-discount-item-text">
+                                            Giảm 250,000đ
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="benefit-discount-item">
-                                    <div class="benefit-discount-item-text">
-                                        Giảm 100,000đ
-                                    </div>
+                                <!-- icon discount-->
+                                <div class=" benefit-discount-more">
+                                    <i class="fa-solid fa-angle-right"></i>
                                 </div>
-                                <div class="benefit-discount-item">
-                                    <div class="benefit-discount-item-text">
-                                        Giảm 250,000đ
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- icon discount-->
-                            <div class=" benefit-discount-more">
-                                <i class="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- new price  -->
-                    <div class="price-segment mt-4">
-                        <div class="current-price-inner">
-                            <span class="current-price">3,017,000
+    
+                        <!-- new price  -->
+                        <div class="price-segment mt-4">
+                            <div class="current-price-inner">
+                                <span class="current-price">3,017,000
+                                    <sup>đ</sup>
+                                </span>
+                                <span class="infomation"><i class="fas fa-info-circle mz-align-middle"></i></span>
+                                <button class="btn btn-outline-dark hurt">
+                                    <i class="fa-solid fa-check"></i>Săn giá rẻ
+                                </button>
+                            </div>
+                        </div>
+    
+                        <!-- old price -->
+                        <div class="old-price-panel">
+                            <span class="old-price old-price-detail">
+                                3,509,000
                                 <sup>đ</sup>
                             </span>
-                            <span class="infomation"><i class="fas fa-info-circle mz-align-middle"></i></span>
-                            <button class="btn btn-outline-dark hurt">
-                                <i class="fa-solid fa-check"></i>                                Săn giá rẻ
-                            </button>
+                            <span class="mx-2">|</span>
+                            <span><b>GIẢM 14%</b></span>
+                            <span class="save mx-1">(Tiết kiệm: 492,000 <sup>đ</sup>)</span>
                         </div>
-                    </div>
-
-                    <!-- old price -->
-                    <div class="old-price-panel">
-                        <span class="old-price old-price-detail">
-                            3,509,000
-                            <sup>đ</sup>
-                        </span>
-                        <span class="mx-2">|</span>
-                        <span><b>GIẢM 14%</b></span>
-                        <span class="save mx-1">(Tiết kiệm: 492,000 <sup>đ</sup>)</span>
-                    </div>
-                    
-                    <!-- cart -->
-                    <div class="cart-segment d-flex mt-3">
-                        <div class="quantity-control-group">
-                            <div class="down-btn ">-</div>
-                            <input type="text" class="quantity-input mx-1" value="1" readonly>
-                            <div class="up-btn">+</div>
+                        
+                        <!-- cart -->
+                        <div class="cart-segment d-flex mt-3">
+                            <div class="quantity-control-group">
+                                <div class="down-btn ">-</div>
+                                <input type="text" class="quantity-input mx-1" value="1" readonly>
+                                <div class="up-btn">+</div>
+                            </div>
+                            <div class="btn btn-dark cart-shared mx-3 cart-online">MUA NGAY</div>
+                            <div class="btn btn-outline-dark cart-shared mx-1 cart-this">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                               <b>Giỏ hàng   </b>           
+                            </div>
                         </div>
-                        <div class="btn btn-dark cart-shared mx-3 cart-online">MUA NGAY</div>
-                        <div class="btn btn-outline-dark cart-shared mx-1 cart-this">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                           <b>Giỏ hàng   </b>           
-                        </div>
-                    </div>
-
-                    <!-- provider -->
-                    <div class="provider-segment detail-info-segment mt-3">
-                        <div>Miễn phí Vận chuyển Siêu tốc cho Platinum và Super VIP.
-                            <a href="#"><b>Nâng cấp ngay</b></a>
-                        </div>
-                        <div class="provider-segment-inner">
-                            <div class="segment-head">
-                                <div class="pd-segment-head">
-                                    <b>Giao Tiêu chuẩn</b>
+    
+                        <!-- provider -->
+                        <div class="provider-segment detail-info-segment mt-3">
+                            <div>Miễn phí Vận chuyển Siêu tốc cho Platinum và Super VIP.
+                                <a href="#"><b>Nâng cấp ngay</b></a>
+                            </div>
+                            <div class="provider-segment-inner">
+                                <div class="segment-head">
+                                    <div class="pd-segment-head">
+                                        <b>Giao Tiêu chuẩn</b>
+                                    </div>
+                                </div>
+                                <div class="current-provider-info text-center">
+                                    Dự kiến về Việt Nam
+                                    <b class="mx-1">11-03-2022 - 16-03-2022</b>
                                 </div>
                             </div>
-                            <div class="current-provider-info text-center">
-                                Dự kiến về Việt Nam
-                                <b class="mx-1">11-03-2022 - 16-03-2022</b>
+                        </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-2 mx-2">
+                <!-- head -->
+                <div class="section-head">
+                    <div class="section-head-pd">
+                        <div class="section-head-top">
+                            Người bán <a href="#">Fado Trading WS</a>
+                        </div>
+                        <div class="section-head-top">
+                            <div class="rating-col">
+                                <div class="rating-group d-flex">
+                                    <div class="rating-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>                                                        
+                                    </div>
+                                    
+                                </div>
+                                <span>100% uy tín</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- side-sticky-wrapper -->
+                <div class="side-sticky-wrapper">
+                    <div  id="our-feature-side-section" class="mz-basic-sidebox has-box our-feature-side-section headroom headroom--not-bottom headroom--not-top">
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                        <div class="feature-item-content"> Giá bạn thấy bằng giá bạn trả</div>
+                                    </div>
+                                    <div class="feature-item-dropdown-icon">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="feature-item-des">Cam kết giá bán niêm yết chính xác trên website</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -456,65 +552,68 @@
         
     </section>
 
+
     <section class="home-feature-section mt-5" >
         <div class="container ">
-            <div class="feature-segment ">
-                <div class="our-feature-segment">
-                    <div class="feature-list">
-                        <div class="feature-item">
-                            <div class="feature-item-inner">
-                                <div class="feature-item-icon">
-                                    <i class="fas fa-hand-holding-usd"></i>
+            <div class="col-md-10">
+                <div class="feature-segment ">
+                    <div class="our-feature-segment">
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <div class="feature-item-content">Giá bạn thấy bằng giá bạn trả</div>
                                 </div>
-                                <div class="feature-item-content">Giá bạn thấy bằng giá bạn trả</div>
                             </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-item-inner">
-                                <div class="feature-item-icon">
-                                    <i class="fas fa-user-shield"></i>
+                            <div class="feature-item">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon">
+                                        <i class="fas fa-user-shield"></i>
+                                    </div>
+                                    <div class="feature-item-content">Yên tâm mua sắm, giải tỏa rủi ro</div>
                                 </div>
-                                <div class="feature-item-content">Yên tâm mua sắm, giải tỏa rủi ro</div>
                             </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-item-inner">
-                                <div class="feature-item-icon">
-                                    <i class="bi bi-calendar2-check-fill"></i>
+                            <div class="feature-item">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon">
+                                        <i class="bi bi-calendar2-check-fill"></i>
+                                    </div>
+                                    <div class="feature-item-content">Hàng chất lượng rõ nguồn gốc</div>
                                 </div>
-                                <div class="feature-item-content">Hàng chất lượng rõ nguồn gốc</div>
                             </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-item-inner">
-                                <div class="feature-item-icon">
-                                    <i class="bi bi-shield-fill-check"></i>                            
+                            <div class="feature-item">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon">
+                                        <i class="bi bi-shield-fill-check"></i>                            
+                                    </div>
+                                    <div class="feature-item-content">Sản phẩm nhập khẩu chính ngạch</div>
                                 </div>
-                                <div class="feature-item-content">Sản phẩm nhập khẩu chính ngạch</div>
                             </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-item-inner">
-                                <div class="feature-item-icon">
-                                    <i class="fas fa-map-marked-alt"></i>
+                            <div class="feature-item">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                    </div>
+                                    <div class="feature-item-content">Liên tục cập nhật hành trình</div>
                                 </div>
-                                <div class="feature-item-content">Liên tục cập nhật hành trình</div>
                             </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-item-inner">
-                                <div class="feature-item-icon">
-                                    <i class="fas fa-globe"></i>                                
+                            <div class="feature-item">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon">
+                                        <i class="fas fa-globe"></i>                                
+                                    </div>
+                                    <div class="feature-item-content">Miễn phí giao hàng trong nước</div>
                                 </div>
-                                <div class="feature-item-content">Miễn phí giao hàng trong nước</div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-10 mt-3 image-feature img-fluid">
-                <img src="img/deal/Fado.VN_1646039875.4274.jpg" alt="">
+                <div class="col-md-10 mt-3 image-feature img-fluid">
+                    <img src="img/deal/Fado.VN_1646039875.4274.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -576,6 +675,19 @@
                 </table>
             </div>
         </div>
+    </section>
+
+    <!-- image product -->
+    <section class="product-image-section mt-4">
+        <div class="container">
+            <div class="product-image-title">
+                Hình ảnh chi tiết
+            </div>
+            <div class="product-image-body">
+                <img src="img/deal/casi-sheen.jpg" alt="">
+            </div>
+        </div>
+
     </section>
 
     <!-- footer -->
@@ -742,6 +854,7 @@
         </div>
 
     </section>
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

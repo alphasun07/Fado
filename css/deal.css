@@ -130,13 +130,14 @@
 .notranslate ul .cl-detail{
     color: #6d6b6b;
 }
+
 .main-detail-section .image-slider{
     border-radius: 10px;
     border: 1px solid #303846;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
 }
 .main-detail-section .swiper-wrapper img{
-    width: 90%;
+    width: 94%;
     padding: 8px;
     margin-left: 5%;
 }
@@ -155,6 +156,7 @@
 }
 .product-detail{
     color: #504b4b;
+    margin:0 0 0 20px;
 }
 .rating-star{
     color: #2e2e2e;
@@ -400,13 +402,13 @@
     font-family: League Gothic;
     font-size: 17px;
 }
-.product-detail .quantity-control-group {
+.quantity-control-group {
     display: flex;
     height: 40px;
     width: 120px;
 }
-.product-detail .quantity-control-group .down-btn, 
-.product-detail .quantity-control-group .up-btn {
+.quantity-control-group .down-btn, 
+.quantity-control-group .up-btn {
     align-items: center;
     background: rgba(46,46,46,.1);
     border: 0;
@@ -422,7 +424,7 @@
     transition: .3s;
     width: 40px;
 }
-.product-detail .quantity-control-group .quantity-input {
+.quantity-control-group .quantity-input {
     background: 0 0;
     border: 0;
     border-bottom: 1px solid #ccd2dc;
@@ -432,11 +434,11 @@
     text-align: center!important;
     width: 32px;
 }
-.product-detail .quantity-control-group .quantity-input:focus{
+.quantity-control-group .quantity-input:focus{
     border: none;
 }
-.product-detail .quantity-control-group .down-btn:hover, 
-.product-detail .quantity-control-group .up-btn:hover {
+.quantity-control-group .down-btn:hover, 
+.quantity-control-group .up-btn:hover {
     background: #2e2e2e;
     color: #fff;
 }
@@ -478,7 +480,7 @@
 .home-feature-section {
     position: relative;
     z-index: 10;
-    max-width: 1050px;
+    max-width: 1235px;
     margin-left: 4%;
     box-shadow: 0 -16px 32px -16px rgb(204 210 220 / 60%);
     
@@ -496,7 +498,7 @@
     border-bottom: 1px #ccc solid;
 }
 .image-feature img{
-    width: 121% ;
+    width: 120% ;
 }
 .define-amazon-content {
     font-size: 24px;
@@ -517,4 +519,117 @@ table td{
     font-size: 13pt;
     padding-left: 25%;
     width: 300px;
+}
+.product-info-section,
+.product-image-section{
+    border-bottom: 1px solid #ccd2dc;
+    margin-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+}
+.product-image-section .product-image-title{
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.product-image-section .product-image-body img{
+    max-height: 240px;
+    max-width: 240px;
+}
+.product-scroll-section.headroom--not-top {
+    opacity: 1;
+    pointer-events: all;
+    transform: unset;
+}
+.product-scroll-section {
+    background: #000;
+    color: #fff;
+    left: 0;
+    min-width: 1256px;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transform: translateY(-16px);
+    transition: 1.3s;
+    width: 100%;
+    will-change: transform opacity;
+    z-index: 40;
+}
+.product-scroll-section__inner {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+.product-scroll-1{
+    line-height: 1;
+    align-items: center;
+    
+}
+.product-scroll-section .price-type-segment {
+    flex: 0 0 72px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-right: 16px;
+}
+
+.product-scroll-section .price-segment {
+    display: block;
+    margin-right: 16px;
+    padding-bottom: 6px;
+}
+.product-scroll-section .price-segment .curr-price {
+    font-family: League Gothic;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.product-scroll-section .price-segment__old-price-panel .old-price {
+    font-family: League Gothic;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1;
+}
+.old-price {
+    margin-left: 0;
+}
+.down-btn-head{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.add-cart:hover,
+.favorite-btn:hover{
+    background-color: #2e2e2e;
+    color: #fff;
+}
+.add-cart,
+.favorite-btn{
+    background-color: #fff;
+    color: #2e2e2e;
+    height: 42px;
+    width: 45px;
+}
+.control-group {
+    margin-top: 0;
+}
+.favorite-btn {
+    margin-left: 10px;
+}
+.section-head{
+    border: 1px solid #ccc;
+}
+.section-head-pd{
+    padding: 8px;
+}
+.section-head-top{
+    padding: 2px;
+}
+.col-cor{
+    max-width: 47%;
+}
+side-sticky-wrapper {
+    top: 96px;
 }
