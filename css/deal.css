@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@800&display=swap');
+.header-sticky{
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
 .img-fado img{
     height: 100%;
     left: 50%;
@@ -6,7 +11,7 @@
 }
 .home-sub-article {
     background: #fff;
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 .home-sub-article .article-card {
     background: linear-gradient(180deg,#ccd2dc,#fff 80%);
@@ -630,6 +635,74 @@ table td{
 .col-cor{
     max-width: 47%;
 }
-side-sticky-wrapper {
+.side-sticky-wrapper {
+    margin-left: -24%;
     top: 96px;
+    position: sticky;
+    border: 1px solid #171717d2;
+    width: 243px;
 }
+.our-feature-side-section.headroom--not-top {
+    margin-bottom: 16px;
+    max-height: 1000px;
+    opacity: 1;
+    padding: 16px;
+}
+
+.our-feature-side-section .feature-item.is-active .feature-item-inner {
+    color: #2e2e2e;
+}
+.our-feature-side-section .feature-item-inner {
+    align-items: center;
+    color: #505f77;
+    cursor: pointer;
+    display: flex;
+    padding: 8px 0;
+    position: relative;
+}
+.our-feature-side-section .feature-item-icon {
+    font-size: 20px;
+    margin-left: -6px;
+}
+.our-feature-side-section .feature-item-content {
+    font-size: 12px;
+    line-height: 18px;
+}
+.our-feature-side-section .feature-item-dropdown-icon {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-size: 10px;
+    height: 16px;
+    justify-content: center;
+    width: 16px;
+}
+.our-feature-side-section .feature-item-inner:after {
+    background: #f3f5f7;
+    bottom: -1px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}.our-feature-side-section .feature-item-des {
+    max-height: 300px;
+    opacity: 1;
+    padding: 8px 16px;
+}
+.our-feature-side-section .feature-item-des {
+    background: #f3f5f7;
+    color: #505f77;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 -16px;
+    padding: 0 16px;
+    transition: .3s;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* .favorite-compare[title]:hover{
+    background-color: #508b69;
+} */

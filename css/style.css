@@ -21,6 +21,11 @@ a{
     background: #fff;
     padding: 20px 0;
 }
+.header-section{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
 .logo-col {
     align-items: center;

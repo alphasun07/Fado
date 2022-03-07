@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
          <!-- nav -->
-    <section id="header-section" class="header-section" >
+    <section id="header-section" class="header-section header-sticky" >
         <div class="section-body">
             <!-- main-block -->
             <div class="header-main-block ">
@@ -275,10 +275,10 @@
                             <div class="review">(1120 đánh giá)</div>
                         </div>
                         <div class="favorite-compare-control d-flex justify-content-end">
-                            <button class="favorite-tym mx-4">
+                            <button class="favorite-tym mx-4" title="Yêu thích">
                                 <div class="icon"><i class="bi bi-heart"></i></div>
                             </button>
-                            <div class="favorite-compare">
+                            <div class="favorite-compare" title="So sánh">
                                 <div class="icon"></div><i class="fa-solid fa-code-compare"></i></div>
                             </div>
                         </div>
@@ -528,31 +528,13 @@
                     </div>
                 </div>
 
-                <!-- side-sticky-wrapper -->
-                <div class="side-sticky-wrapper">
-                    <div  id="our-feature-side-section" class="mz-basic-sidebox has-box our-feature-side-section headroom headroom--not-bottom headroom--not-top">
-                        <div class="feature-list">
-                            <div class="feature-item">
-                                <div class="feature-item-inner">
-                                    <div class="feature-item-icon">
-                                        <i class="fas fa-hand-holding-usd"></i>
-                                        <div class="feature-item-content"> Giá bạn thấy bằng giá bạn trả</div>
-                                    </div>
-                                    <div class="feature-item-dropdown-icon">
-                                        <i class="fa-solid fa-angle-down"></i>
-                                    </div>
-                                    <div class="feature-item-des">Cam kết giá bán niêm yết chính xác trên website</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         
     </section>
 
-
+<!-- home feature -->
     <section class="home-feature-section mt-5" >
         <div class="container ">
             <div class="col-md-10">
@@ -620,7 +602,7 @@
 
     <!-- product info -->
     <section class="product-info-section mt-5">
-        <div class="container">
+        <div class="container d-flex">
             <div class="col-md-10">
                 <div class="define-amazon-content">
                     <span>
@@ -673,6 +655,97 @@
                         <td>Đồng hồ dây da</td>
                       </tr>
                 </table>
+            </div>
+               
+            <!-- side-sticky-wrapper -->
+            <div class="col-md-2">
+                <div class="side-sticky-wrapper ">
+                    <div  id="our-feature-side-section" class="mz-basic-sidebox has-box our-feature-side-section headroom headroom--not-bottom headroom--not-top">
+                        <div class="feature-list dropdown">
+                            <div class="feature-item dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon d-flex">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                        <div class="feature-item-content mx-2"> Giá bạn thấy bằng giá<br> bạn trả</div>
+                                        <div class="feature-item-dropdown-icon">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item feature-item-des" href="#">Cam kết giá bán niêm yết chính xác trên website</a></li>
+                            </ul>
+
+                            <div class="feature-item dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon d-flex">
+                                        <i class="fas fa-user-shield"></i>
+                                        <div class="feature-item-content mx-2"> Hàng chất lượng, rõ nguồn <br> gốc</div>
+                                        <div class="feature-item-dropdown-icon">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item feature-item-des" href="#">Chất lượng đảm bảo, nguồn gốc rõ ràng,<br> có đánh giá từ người mua và thẩm định độ uy tín người bán</a></li>
+                            </ul>
+
+                            <div class="feature-item dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon d-flex">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <div class="feature-item-content mx-2"> Yên tâm mua sắm giải,<br> tỏa rủi ro</div>
+                                        <div class="feature-item-dropdown-icon">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                <li><a class="dropdown-item feature-item-des" href="#">Bảo vệ quyền lợi Khách Hàng,<br> hỗ trợ đổi trả nhanh chóng  </a></li>
+                            </ul>
+
+                            <div class="feature-item dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon d-flex">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="feature-item-content mx-2">Sản phẩm nhập khẩu chính <br> ngạch</div>
+                                        <div class="feature-item-dropdown-icon">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                <li><a class="dropdown-item feature-item-des" href="#">An toàn, minh bạch hợp pháp, không sợ rủi ro</a></li>
+                            </ul>
+
+                            <div class="feature-item dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="feature-item-inner">
+                                    <div class="feature-item-icon d-flex">
+                                        <i class="fa-solid fa-earth-asia"></i>
+                                        <div class="feature-item-content mx-2">Liên tục cập nhật hành trình</div>
+                                        <div class="feature-item-dropdown-icon">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                <li><a class="dropdown-item feature-item-des" href="#">Theo dõi và cập nhật quá trình vận đơn thường xuyên</a></li>
+                            </ul>
+                            
+                        </div>
+                       
+                    </div>
+                </div>
             </div>
         </div>
     </section>

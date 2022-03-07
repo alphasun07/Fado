@@ -6,6 +6,7 @@ $('.autoplay').slick({
     autoplaySpeed: 2000,
   });
 
+  // header
 window.onscroll = function(){
   scroll();
 };
@@ -14,6 +15,7 @@ function scroll(){
         document.getElementById("product-scroll-section").style.top = "0";
     }
     else{
-        document.getElementById("product-scroll-section").style.top = "-300px";
+        document.getElementById("product-scroll-section").style.top = "-200px";
     }
 }
+
