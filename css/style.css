@@ -278,6 +278,15 @@ a, a:active, a:focus, a:hover {
     flex-grow: 2;
     justify-content: flex-end;
 }
+
+.menu-nav .menu-nav-detail{
+
+    background: #fff;
+    box-shadow: 4px 19px 35px 5px rgb(48 56 70 / 30%); 
+    min-height: 408px;
+
+}
+
 .carousel-indicators [data-bs-target] {
     width: 14px !important;
     height: 6px !important;
