@@ -19,3 +19,16 @@ function scroll(){
     }
 }
 
+
+$(document).ready(function(){
+  var quantity = 1;
+
+  $('.down-btn').click(function(){
+    quantity--;
+    $('#quantity').val(quantity);
+  });
+  $('.up-btn').click(function(){
+    quantity++;
+    $('#quantity').val(quantity);
+  });
+});

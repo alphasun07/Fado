@@ -603,7 +603,7 @@ a, a:active, a:focus, a:hover {
     flex-direction: column;
     position: relative;
     transition: .3s;
-    width: 100%;
+    /* width: 100%; */
 }
 .product-deal-head {
     margin-bottom: 8px;
