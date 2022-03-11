@@ -203,7 +203,7 @@
                     <div class="cart-segment d-flex mt-4">
                         <div class="quantity-control-group">
                             <div class="down-btn down-btn-head " disabled>-</div>
-                            <input type="text" class="quantity-input mx-1 text-light" value="1" readonly>
+                            <input type="text" class="quantity-input mx-1 text-light" name="quantity" value="1" min="1"  readonly>
                             <div class="up-btn down-btn-head">+</div>
                         </div>
                         <div class="btn btn-light cart-shared mx-3 cart-online">MUA NGAY</div>
@@ -472,8 +472,10 @@
                         <div class="cart-segment d-flex mt-3">
                             <div class="quantity-control-group">
                                 <div class="down-btn ">-</div>
-                                <input type="text" class="quantity-input mx-1" value="1" readonly>
+                                <input type="text" class="quantity-input mx-1" name="quantity" value="1" min="1" readonly>
                                 <div class="up-btn">+</div>
+
+                                
                             </div>
                             <div class="btn btn-dark cart-shared mx-3 cart-online">MUA NGAY</div>
                             <div class="btn btn-outline-dark cart-shared mx-1 cart-this">

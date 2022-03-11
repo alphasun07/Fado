@@ -703,6 +703,263 @@ table td{
     display: none;
 }
 
-/* .favorite-compare[title]:hover{
-    background-color: #508b69;
-} */
+
+/*  */
+/* order page */
+.order-page {
+    background: #eaedf1;
+}
+.order-header-section {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(204 210 220 / 40%);
+    margin-bottom: 4rem;
+    height: 77px;
+    line-height: 10px;
+    margin-bottom: 0 !important;
+    
+}
+.order-header-block {
+    align-items: center;
+    display: flex;
+    padding: 1.25rem 0;
+}
+.order-header-block .header-logo-segment {
+    height: 48px;
+}
+.order-header-block .header-logo-segment img{
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+}
+.order-header-block .header-info-segment{
+    align-items: center;
+    display: inline-flex;
+    margin-left: auto;
+    padding-left: 2rem;
+}
+.order-header-block .header-info-segment .info-col {
+    align-items: center;
+    display: inline-flex;
+    padding: 0 2rem;
+    position: relative;
+}
+.order-header-block .header-info-segment .header-title {
+    color: #303846;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.order-header-block .header-info-segment .info-line:before {
+    background: #f3f5f7;
+    content: "";
+    height: calc(100% + 20px);
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 1px;
+}
+.order-header-block .header-info-segment .header-cart-info {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+.header-cart-btn{
+    position: relative;
+}
+.header-cart-quantity {
+    position: absolute;
+    left: 64%;
+    top: -16px;
+    z-index: 10;
+    padding: 3px 5px;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    border: 2px #fff solid;
+    font-size: 11px;
+}
+.btn-cart-head{
+    background-color: #000;
+    color: #fff;
+    padding: 11px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.info-line .contact-info .contact-suggest-label{
+    color: #505f77d7;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+.contact-info{
+    text-align: right;
+}
+.order-layout {
+    display: flex;
+    margin-bottom: 32px;
+    margin-top: 35px;
+}
+.order-layout__main-col {
+    min-width: 0;
+}
+.order-layout__main-col.col-md-8{
+    width: 875px !important;
+}
+.order-layout .ship-fee-alert {
+    background: #cfd5de;
+    border: 1px dashed #2e2e2e;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+}
+.main-product .product-info {
+    width: 64% !important;
+    margin-right: 32px;
+    min-width: 0;
+}
+.main-product .product-info {
+    width: 49% !important;
+    margin-right: 32px;
+    min-width: 0;
+}
+.checkout-user-info-section .section-head-title {
+    color: #505f77;
+    font-size: 1rem;
+    font-weight: 800;
+}
+checkout-user-info-section .fill-info-field {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.checkout-user-info-section .fill-info-field .img-col-title {
+    display: block;
+    flex: 0 0 132px;
+    margin-right: 24px;
+    margin-left: 10px;
+}
+.checkout-user-info-section .fill-info-field .img-col-title img {
+    width: 132px;
+}
+.checkout-user-info-section .info-col.is-full-width .fill-info-field .meta-info-col {
+    align-items: center;
+    display: flex;
+    margin-right: 0;
+}
+.info-label{
+    width: 65%;
+}
+.field-control-group{
+    width: 35%;
+    text-align: right;
+    margin: auto;
+}
+.checkout-user-info-section .main-fill{
+    padding: 10px;
+}
+.checkout-user-info-section .title-col span{
+    color: #98a5b9;
+    font-weight: 700;
+}
+.content-payment{
+    background: #fff;
+    color: #303846;
+    font-size: 0.8rem;
+}
+.checkout-payment-info-section .payment-method-group-item {
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgb(204 210 220 / 70%);
+    cursor: pointer;
+
+    min-height: 72px;
+    overflow: hidden;
+    padding: 8px 12px;
+    transition: .3s;
+}
+.checkout-payment-info-section .payment-method-group-item .logo-col {
+    align-items: center;
+    display: flex;
+    flex: 0 0 48px;
+    height: 48px;
+    justify-content: center;
+    margin-right: 12px;
+}
+.checkout-payment-info-section .payment-method-group-item .title-label {
+    color: #303846;
+    font-size: 13px;
+    transition: .3s;
+}
+.payment-method-group-col{
+    background-color: #f3f5f7;
+}
+.payment-method-group-col .content{
+    padding: 12px;
+}
+.checkout-payment-info-section .effect:hover {
+    background: #eaedf1;
+    box-shadow: 0 8px 16px -4px rgb(46 46 46 / 30%);
+}
+.checkout-payment-info-section .payment-method-group-item .option-title {
+    color: #2e2e2e;
+    font-size: 11px;
+}
+.checkout-payment-info-section .payment-method-group-item .option-info-field {
+    background: #cfd5de;
+    padding: 0 !important;
+    position: relative;
+    width: 100%;
+    transition: background-color .3s ease;
+}
+.checkout-payment-info-section .is-active{
+    background: #2e2e2e;
+    box-shadow: 0 8px 16px -4px rgb(46 46 46 / 40%);
+    cursor: default;
+    color: #fff;
+}
+.checkout-payment-info-section .payment-method-group-item.is-active .title-label{
+    color: #fff;
+}
+.checkout-payment-info-section .payment-method-group-item.is-active img {
+    filter: brightness(0) invert(1);
+}
+.checkout-payment-info-section .payment-method-group-item.is-disable {
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgb(204 210 220 / 70%);
+    cursor: default;
+    opacity: .5;
+}
+.checkout-payment-info-section .fadopay-disable{
+    position: relative;
+}
+.checkout-payment-info-section .fadopay-disable .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.checkout-payment-info-section .fadopay-disable .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.checkout-payment-info-section .fadopay-disable:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

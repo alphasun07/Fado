@@ -1,4 +1,3 @@
-
 $('.autoplay').slick({
     slidesToShow: 6,
     slidesToScroll: 2,
@@ -19,16 +18,47 @@ function scroll(){
     }
 }
 
+//cart price
+// window.onscroll = function(){
+//   scroll_1();
+// };
+// function scroll_1(){
+//     if(document.body.scrollTop <200 || document.documentElement.scrollTop <200){
+//         document.getElementById("section-sticky-cart").style.bottom = "0";
+//     }
+//     else{
+//         document.getElementById("section-sticky-cart").style.bottom = "-200px";
+//     }
+// }
+
+
+$(document).ready(function(){
+  var quantity = 1;
+  
+  $('.down-btn').click(function(){
+    if(quantity>1){
+      quantity--;
+    }
+    $('[name="quantity"]').val(quantity);
+  });
+  $('.up-btn').click(function(){
+    quantity++;
+    $('[name="quantity"]').val(quantity);
+  });
+});
+
 
 $(document).ready(function(){
   var quantity = 1;
 
-  $('.down-btn').click(function(){
-    quantity--;
-    $('#quantity').val(quantity);
+  $('.prev-number').click(function(){
+    if(quantity>1){
+      quantity--;
+    }
+    $('#cart_number').val(quantity);
   });
-  $('.up-btn').click(function(){
+  $('.next-number').click(function(){
     quantity++;
-    $('#quantity').val(quantity);
+    $('#cart_number').val(quantity);
   });
 });

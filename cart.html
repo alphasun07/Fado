@@ -189,20 +189,6 @@
         </div>
     </section>
 
-    <!-- CHƯA CÓ SP TRONG GIỎ -->
-
-    <!-- image -->
-    <!-- <section class="cart-empty-section">
-        <div class="container p-5">
-            <div class="section-inner">
-                <img src="img/cart-empty@3x.png" alt="">
-            </div>
-            <div class="content my-3">Chưa có sản phẩm nào trong giỏ hàng</div>
-            <a href="index.html" class="btn btn-dark btn-continue mt-1">Tiếp tục mua sắm</a>
-        </div>
-    </section> -->
-
-
     <!--CÓ SẢN PHẨM  -->
     
     <!-- tab cart -->
@@ -240,11 +226,14 @@
                 <div class="container">
                     <div class="section-inner">
                         <div class="section-head d-flex">
-                            <form action="">
-                                <div class="check-service mt-3">
-                                    <input type="checkbox" id="" name="" value="">
-                                </div>
-                            </form>
+                            <div class="product-check">
+                                <form action="">
+                                    <div class="check-service mt-3 ">
+                                        <input type="checkbox" id="" name="" value="">
+                                    </div>
+                                </form>
+                            </div>
+                            
                             <div class="title-col ">
                                 <a href="#" class="titl-segment">
                                     <span class="icon-shape">
@@ -299,24 +288,151 @@
                                     </div>
                                 </div>
                                 <div class="col-md-5 segment-right">
-                                    <div class="segment-right-top">
+                                    <div class="segment-right-top d-flex">
+                                        <!-- quantity -->
                                         <div class="product-quantity">
                                             <div class="number-control">
-                                                <input type="number" name="" id="" value="1" min="1" class="number-control-input">
+                                                <input type="number" name="" id="cart_number" value="1" min="1" class="number-control-input">
                                                 <div class="number-control-wrap">
-                                                    <button class="number-down">
+                                                    <button class="number-down prev-number">
                                                         <span class="number-btn-icon">-</span>
                                                     </button>
-                                                    <button class="number-up">
+                                                    <button class="number-up next-number">
                                                         <span class="number-btn-icon">+</span>
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <!-- price -->
+                                        <div class="product-price">
+                                            <div class="current-price">549.000 <sup>đ</sup></div>
+                                            <div class="total-current-price-field">
+                                                <span class="quantity">(x1)</span>
+                                                <span class="total-current-price">549.000 <sup>đ</sup></span>
+                                            </div>
+                                        </div>
+
+                                        <!-- control -->
+                                        <div class="product-control d-flex">
+                                            <button class="control-btn" title="Chuyển vào yêu thích">
+                                                <img src="https://stfe.fadoglobal.io/desktop/image/page/cart-page/move-to-favorite-icon.svg" alt="">
+                                            </button>
+                                            <button title="Xóa sản phẩm" class="control-btn">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
 
                             </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="section-inner mt-5">
+                        <div class="section-head d-flex">
+                            <div class="product-check">
+                                <form action="">
+                                    <div class="check-service mt-3 ">
+                                        <input type="checkbox" id="" name="" value="">
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <div class="title-col ">
+                                <a href="#" class="titl-segment">
+                                    <span class="icon-shape">
+                                        <img src="https://stfe.fadoglobal.io/desktop/image/page/cart-page/icon-mall.svg" alt="">
+                                    </span>
+                                    <span class="title">Fado Trading ET</span>
+                                    <span><i class="fa-solid fa-angle-right mx-1 "></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- body -->
+                        <div class="section-body ">
+                            <div class="main-product d-flex">
+                                <div class="col-md-7 segment-left">
+                                    <div class="product-check">
+                                        <form action="">
+                                            <div class="check-service mt-3">
+                                                <input type="checkbox" id="" name="" value="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="product img">
+                                        <a href="#"><img src="img/Fado.VN_1638772834.0903.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" title="Lip Maestro intense velvet color 400" class="product-name">
+                                            Lip Maestro intense velvet color 400
+                                        </a>
+                                        <div class="meta-item-wrap d-flex">
+                                            <div class="meta-item">
+                                                <div class="content">Từ Mỹ</div>                                            
+                                                <div class="seperate-item">･</div>
+                                            </div>
+                                            <div class="meta-item">
+                                                <div class="content">Mới</div>                                            
+                                                <div class="seperate-item">･</div>
+                                            </div>
+                                            <div class="meta-item d-flex">
+                                                <div class="label">Thương hiệu: </div>                                            
+                                                <div class="content mx-1"><span>Gio Gio Armani</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-shipping">
+                                        <b class="font-ship">Giao tiêu chuẩn</b>
+                                        <div class="delivery-time-field">
+                                            <b>Dự kiến hàng về Việt Nam</b>
+                                            <br>
+                                            22-03-2022 - 25-03-2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 segment-right">
+                                    <div class="segment-right-top d-flex">
+                                        <!-- quantity -->
+                                        <div class="product-quantity">
+                                            <div class="number-control">
+                                                <input type="number" name="" id="cart_number" value="1" min="1" class="number-control-input">
+                                                <div class="number-control-wrap">
+                                                    <button class="number-down prev-number">
+                                                        <span class="number-btn-icon">-</span>
+                                                    </button>
+                                                    <button class="number-up next-number">
+                                                        <span class="number-btn-icon">+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- price -->
+                                        <div class="product-price">
+                                            <div class="current-price">549.000 <sup>đ</sup></div>
+                                            <div class="total-current-price-field">
+                                                <span class="quantity">(x1)</span>
+                                                <span class="total-current-price">549.000 <sup>đ</sup></span>
+                                            </div>
+                                        </div>
+
+                                        <!-- control -->
+                                        <div class="product-control d-flex">
+                                            <button class="control-btn" title="Chuyển vào yêu thích">
+                                                <img src="https://stfe.fadoglobal.io/desktop/image/page/cart-page/move-to-favorite-icon.svg" alt="">
+                                            </button>
+                                            <button title="Xóa sản phẩm" class="control-btn">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -335,7 +451,78 @@
                 </div>
             </section>
         </div>
-      </div>
+    </div>
+
+    <!-- voucher -->
+    <section class="cart-summary-section">
+        <div class="section-static">
+            <div class="container">
+                <div class="section-static-inner">
+                    <div class="cart-summary-block d-flex">
+                        <div class="discount-col">
+                            <div class="fee-ship">
+                                <img src="	https://stfe.fadoglobal.io/desktop/image/page/cart-page/freeship-text.svg" alt="">
+                                <i class="mx-2">Đơn hàng đã được miễn phí giao hàng trong nước</i>
+                            </div>
+                            <div class="discount-code-segment">
+                                <form action="" class="discount-code-form">
+                                    <input type="text" placeholder="Nhập mã giảm giá" class="discount-code-input">
+                                    <button class="submit-btn">Áp dụng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="price-col mt-4">
+                            <div class="total-price-field d-flex">
+                                <div class="label">Tổng tiền sản phẩm: </div>
+                                <div class="value">
+                                    <span class="price">18.405.000 <sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-col">
+                            <button class="submit-cart-btn">
+                                <span>Đặt hàng <br> tất cả</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-sticky" id="section-sticky-cart">
+            <div class="container">
+                <div class="section-static-inner">
+                    <div class="cart-summary-block d-flex">
+                        <div class="discount-col">
+                            <div class="fee-ship">
+                                <img src="	https://stfe.fadoglobal.io/desktop/image/page/cart-page/freeship-text.svg" alt="">
+                                <i class="mx-2">Đơn hàng đã được miễn phí giao hàng trong nước</i>
+                            </div>
+                            <div class="discount-code-segment">
+                                <form action="" class="discount-code-form">
+                                    <input type="text" placeholder="Nhập mã giảm giá" class="discount-code-input">
+                                    <button class="submit-btn">Áp dụng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="price-col mt-4">
+                            <div class="total-price-field d-flex">
+                                <div class="label">Tổng tiền sản phẩm: </div>
+                                <div class="value">
+                                    <span class="price">18.405.000 <sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-col">
+                            <button class="submit-cart-btn">
+                                <span>Đặt hàng <br> tất cả</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <section class="footer-section">
