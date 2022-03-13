@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:wght@500&display=swap');
 .header-sticky{
     position: relative;
     top: 0;
@@ -930,10 +931,10 @@ checkout-user-info-section .fill-info-field {
     cursor: default;
     opacity: .5;
 }
-.checkout-payment-info-section .fadopay-disable{
+.fadopay-disable{
     position: relative;
 }
-.checkout-payment-info-section .fadopay-disable .tooltiptext {
+.fadopay-disable .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: #555;
@@ -949,7 +950,7 @@ checkout-user-info-section .fill-info-field {
     opacity: 0;
     transition: opacity 0.3s;
 }
-.checkout-payment-info-section .fadopay-disable .tooltiptext::after {
+.fadopay-disable .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -959,7 +960,268 @@ checkout-user-info-section .fill-info-field {
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
-.checkout-payment-info-section .fadopay-disable:hover .tooltiptext {
+.fadopay-disable:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+.form-control__input {
+    background: #fff;
+    border: 2px solid #5f718c;
+    color: #000;
+    height: 40px;
+    padding: 0 12px;
+    transition: .3s;
+    width: 100%;
+    height: 34px;
+}
+.font-fm{
+    font-family: Roboto;
+}
+.checkbox-col{
+    text-align: right;
+}
+.label-phone{
+    width: 50%;
+    
+}
+.state-control__inner{
+    color: #2e2e2e;
+    font-size: 13px;
+    line-height: 19px;
+    margin-left: 0;
+    margin-right: 8px;
+}
+.form-control__input::-webkit-input-placeholder { /* Edge */
+    color: rgb(188, 188, 196);
+    font-size: 14px;
+}
+.lable{
+    color: #505f77;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 8px 0 0;
+}
+.payment-method-group-detail-block .discount-alert .min-order-value, 
+.payment-method-group-detail-block .discount-alert .reduce-value, 
+.payment-method-group-detail-block .number-style {
+    font-family: Oswald,Roboto,sans-serif;
+}
+.checkout-payment-info-section .payment-method-group-detail-block {
+    background: #fff;
+    flex: 0 0 50%;
+    padding: 16px;
+}
+.payment-method-group-detail-block .note-label {
+    color: #505f77;
+    font-size: 13px;
+}
+.payment-method-group-detail-block .break-line {
+    background: #eaedf1;
+    height: 1px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    width: 100%;
+}
+.payment-method-group-detail-block .transfer-bank-logo-col {
+    border: 1px solid #ccd2dc;
+    border-radius: 8px;
+    flex: 0 0 128px;
+    padding: 8px;
+}
+
+.order-layout__sidebar-col.col-md-4{
+    width:  calc(100% - 882px) !important;
+}
+.checkout-confirm-section {
+    position: sticky;
+    top: 24px;
+    z-index: 10;
+}
+.checkout-confirm-section .order-info-form {
+    background: #fff;
+    border-radius: 8px;
+}
+.checkout-confirm-section .order-info-field {
+    align-items: center;
+
+}
+.checkout-confirm-section .payment-limit-field .field-title {
+    flex: 0 0 132px;
+    margin-right: 2rem;
+    color: #505f77;
+    font-weight: 600;
+}
+.checkout-confirm-section .payment-limit-field .field-control {
+    display: inline-flex;
+    margin-left: auto;
+}
+.checkout-confirm-section .payment-limit-field .payment-percent {
+    background: #fff;
+    border: 1px dashed #ccd2dc;
+    border-radius: 4px;
+    color: #98a5b9;
+    cursor: default;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    white-space: nowrap;
+}
+.checkout-confirm-section .payment-limit-field .payment-percent:hover{
+    background: #676767;
+    border-color: #2e2e2e;
+    color: #2e2e2e;
+}
+.nav-pills .nav-link.active{
+    color: #fff;
+    background-color: black !important;
+    box-shadow: 0 8px 16px -4px rgb(204 210 220 / 40%);
+}
+.nav-pills .payment-percent:hover.nav-link.active {
+    color: #fff;
+}
+.payment-limit-field{
+background: #f3f5f7;
+}
+.checkout-confirm-section .order-info-field.is-border-bottom {
+    border-bottom: 1px dashed #eaedf1;
+}
+.checkout-confirm-section .total-product-price-field .total-product-price {
+    color: #303846;
+    font-family: Oswald,Roboto,Helvetica Neue,sans-serif;
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+.checkout-confirm-section .total-product-price-field {
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px dashed #eaedf1;
+    padding: 0.6rem 1.5rem;
+}
+.checkout-confirm-section .total-product-price-field .field-title {
+    color: #505f77;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+.checkout-confirm-section .empty-discount-field .discount-icon img{
+    align-items: center;
+    display: flex;
+    height: 142px;
+    justify-content: center;
+}
+.checkout-confirm-section .empty-discount-field {
+    padding: 10px 30px;
+    text-align: center;
+    width: 320px;
+}
+.checkout-confirm-section .empty-discount-field .note {
+    color: #505f77;
+    margin-top: 22px;
+    font-size: 15px;
+}
+.head-control-col{
+    margin-left: auto;
+}
+.checkout-confirm-section .order-price-field .order-price-number {
+    margin-left: auto;
+    flex: 1 1;
+    font-family: Roboto;
+    font-size: 1.35rem;
+    justify-content: flex-end;
+    min-width: 0;
+    overflow: hidden;
+    text-align: right;
+}
+.checkout-confirm-section .order-price-field {
+    background: #454545;
+    color: #fff;
+}
+.checkout-confirm-section .confirm-fado-condition-label {
+    color: #505f77;
+    font-size: 13px;
+}
+.checkout-confirm-section .submit-order-info-btn {
+    align-items: center;
+    background: #454545;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: default;
+    display: flex;
+    font-family: Oswald,Roboto,Helvetica Neue,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 48px;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.text-head{
+    font-size: 12px;
+}
+.field-mask {
+    cursor: pointer;
+}
+.checkout-confirm-section .field-mask {
+    border-radius: 2px;
+    display: flex;
+    flex: 0 0 100%;
+    padding: 8px 12px;
+    width: 100%;
+}
+.checkout-confirm-section .field-title {
+    align-items: center;
+    color: #505f77;
+    cursor: pointer;
+    display: flex;
+    margin-right: 2rem;
+}
+.checkout-confirm-section .other-cost-value {
+    color: #303846;
+    font-family: Oswald,Roboto;
+    margin-left: auto;
+}
+.checkout-confirm-section .order-info-dropdown {
+    border-top: #98a5b9;
+}
+.checkout-confirm-section .field-mask:hover {
+    background: #eaedf1;
+}
+.order-info-dropdown.show .field-mask{
+    background: #eaedf1;
+}
+.checkout-confirm-section .first-payment-value-field {
+    padding: 0.6rem 2rem;
+}
+.checkout-confirm-section .first-pay{
+    background: #cfd5de;
+}
+.checkout-confirm-section .first-payment-value-field .field-title {
+    color: #171717;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+.checkout-confirm-section .first-payment-value-field .percent-cost-value {
+    color: #2e2e2e;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: auto;
+}
+.checkout-confirm-section .first-payment-value-field .field-title {
+    color: #171717;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+.order-info-field{
+    background: #eff1fa  ;
+    border-bottom: 1px dashed #ccced1;
+}
+.tab-pane{
+    background-color: #fff;
+}
+.order-footer-section .footer-meta-info-col {
+    margin-left: auto;
+}
+.order-footer-section{
+    border-top: 1px solid #ccd2dc;;
 }

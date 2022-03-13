@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/deal.css">
     <link rel="stylesheet" href="css/list.css">
     <link rel="stylesheet" href="css/style.css">
@@ -56,7 +55,7 @@
     </header>
 
     <!-- main content -->
-    <div class="order-layout container ">
+    <div class="order-layout container">
         <div class="order-layout__main-col col-md-8">
             <div class="ship-fee-alert">
                 Mua thêm
@@ -160,10 +159,81 @@
                                             </div>
                                         </div>
                                         <div class="field-control-group mx-3">
-                                            <button class="btn btn-dark rounded-pill">Tạo thông tin đặt hàng</button>
+                                            <button type="button" class="btn btn-dark rounded-pill" data-bs-toggle="modal" data-bs-target="#info_order">Tạo thông tin đặt hàng</button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- modal info order -->
+                        <div class="modal fade" id="info_order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content font-fm">
+                                <div class="modal-header" style="height: 50px; background-color: #fff;">
+                                    <h5 class="modal-title" id="exampleModalLabel">Tạo địa chỉ mới</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <!-- tel -->
+                                        <div class="mb-4 form-text-control">
+                                            <label for="exampleFormControlInput1" class="form-label fw-bold">Họ và tên đầy đủ</label>
+                                            <input type="text" class="form-control form-control__input" id="exampleFormControlInput1" placeholder="Họ và tên đầy đủ">
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-group-control d-flex mb-2">
+                                                <span class="fw-bold label-phone">Điện thoại</span>
+                                                <div class="checkbox-col d-flex">
+                                                    <div class="state-control__inner mx-2">
+                                                        <div class="state-control__label">Dùng số điện thoại hiện có</div>
+                                                    </div>                                                    
+                                                    <input type="checkbox" class="state-control__input mt-1">
+                                                </div>
+                                            </div>
+                                            <input type="tel" class="form-control mb-2 form-control__input" id="exampleFormControlInput1" placeholder="Điện thoại">
+                                            <div class="lable">Fado sẽ cần liên hệ theo số điện thoại này để xác nhận hoặc thông báo hẹn thời gian giao hàng / thu tiền trước.</div>
+
+                                        </div>
+                                        <!-- address -->
+                                        <div class="mb-3 control-select">
+                                            <div class="form-group-control d-flex">
+                                                <span class="fw-bold">Địa điểm</span>
+                                            </div>
+                                            <select class="form-select form-control__input" aria-label=" multiple select example">
+                                                <option selected >Chọn Tỉnh / Thành Phố</option>
+                                                <option value="1">Thái Bình</option>
+                                                <option value="2">Hà Nội</option>
+                                                <option value="3">Hà Giang</option>
+                                            </select>
+                                            <select class="form-select form-control__input" aria-label=" multiple select example">
+                                                <option selected >Chọn Quận / Huyện</option>
+                                                <option value="1">Thái Bình</option>
+                                            </select>
+                                            <select class="form-select form-control__input" aria-label=" multiple select example">
+                                                <option selected >Chọn  Phường / Xã</option>
+                                                <option value="1">Thái Bình</option>
+                                                <option value="2">Hà Nội</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="form-group-control mb-1 ">
+                                                <span class="fw-bold display-continue">Điạ chỉ chính xác</span>
+                                                <span class="lable">(Fado sẽ cần liên hệ theo số điện thoại này để xác nhận hoặc thông báo hẹn thời gian giao hàng / thu tiền trước.)</span>
+                                                
+                                            </div>
+                                            <textarea type="text" name="" id="" cols="52" rows="3" placeholder="địa chỉ chính xác: chung cư, số nhà, tên đường... VD: Toà nhà Fado, 21bis Hậu Giang"></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn me-auto" data-bs-dismiss="modal">Hủy bỏ</button>
+                                        <button type="button" class="btn btn-dark rounded-pill">Cập nhật</button>
+
+                                    </div>
+    
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -185,7 +255,7 @@
                         </div>
 
                         <!-- body -->
-                        <div class="section-body payment-info-block ">
+                        <div class="section-body payment-info-block d-flex">
                             <div class=" col-md-6 payment-method-group-col ">
                                 <div class="content">
                                     <div class="row g-2">
@@ -245,7 +315,7 @@
                                                 <span class="title-label ">Hệ thống cửa hàng tiện lợi</span>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 payment-method-group-item effect d-flex fadopay-disable is-disable">
+                                        <div class="col-md-6 payment-method-group-item effect d-flex fadopay-disable is-disable ">
                                             <div class="logo-col">
                                                 <img src="	https://static.fado.vn/uploads/payment-method/2021/01/08/Fado.VN_1610090289.7319.svg" alt="">
                                             </div>
@@ -253,8 +323,8 @@
                                                 <span class="title-label ">FadoPay</span>
                                             </div>
                                             <div class="tooltiptext">
-                                                Hiện tại điểm FadoPay của Quý Khách <b>không đủ để thực hiện thanh toán đối với hạn mức 100%</b>. Quý Khách vui lòng <b>chọn hạn mức thấp hơn để tiến hành thanh toán.<b></b>
-                                                <a href="#">Nạp điểm ngay</a>
+                                                Hiện tại điểm FadoPay của Quý Khách không đủ để thực hiện thanh toán đối với hạn mức 100%. 
+                                                Quý Khách vui lòng chọn hạn mức thấp hơn để tiến hành thanh toán. 
                                             </div>
                                         </div>
                                         <div class="col-md-6 payment-method-group-item effect d-flex">
@@ -277,16 +347,257 @@
                                 </div>
                                
                             </div>
-                            <div class="col-md-6">
-                                jd
+                            <div class="col-md-6 ">
+                                <div class="payment-method-group-detail-block">
+                                    <div class="text-light bg-dark p-2 rounded-3 mt-3 mx-3">
+                                        Giảm <span class="number-style">23.000đ</span> cho đơn từ <span class="number-style">1.5 triệu</span> khi nhập mã <span class="fw-bold">KM23</span>
+                                    </div>
+                                    <div class="note-label mt-3">
+                                        Quý Khách thực hiện thanh toán bằng cách: Chuyển khoản bằng Internet Banking, tại máy ATM, quầy giao dịch ngân hàng đến số tài khoản công ty Fado tại 2 ngân hàng.
+                                    </div>
+                                    <div class="break-line"></div>
+                                    <div class="d-flex">
+                                        <div class="img-col transfer-bank-logo-col">
+                                            <img src="https://stfe.fadoglobal.io/desktop/image/list-bank/vietcombank-inline.png?v=3.192.2.0" alt="bank-logo">
+                                        </div>
+                                        <div class=" mx-2 img-col transfer-bank-logo-col">
+                                            <img src="	https://stfe.fadoglobal.io/desktop/image/list-bank/techcombank-inline.png?v=3.192.2.0" alt="bank-logo">
+                                        </div>
+                                    </div>
+                                    <div class="break-line"></div>
+                                    <div class="note-label">
+                                        Vui lòng chọn chuyển khoản nhanh 24/7 để Fado có thể nhận được thông tin thanh toán một cách nhanh nhất. Khi thanh toán tại máy ATM, vì không thể ghi chú nội dung nên qúy khách vui lòng liên hệ qua email hoặc tổng đài Fado để được hỗ trợ.
+                                        <br><br>
+                                        Nhấn nút <b>ĐẶT MUA</b>  để hoàn tất đơn đặt hàng và nhận thông tin tài khoản và cú pháp chuyển khoản
+                                        <br><br>
+                                        Đơn hàng của Quý Khách chỉ được người bán thực hiện khi Fado xác nhận đơn hàng được thanh toán với đầy đủ thông tin từ ngân hàng theo cú pháp đã được hướng dẫn.
+                                        <br><br>
+                                        <b> Lưu ý:</b> Một số Ngân hàng không hỗ trợ kiểm tra sau 19h00: <b> Agribank, Đông Á, Sacombank, Vietinbank</b>,...
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+
+        <div class="order-layout__sidebar-col col-md-4 mx-3">
+            <div class="checkout-confirm-section">
+                <div>
+                    <form action="" class="order-info-form">
+                        <div class="form-body">
+                            <div class="order-info-field payment-limit-field d-flex p-2">
+                                <div class="field-title">
+                                    <span class="title-label">Hạn mức thanh toán trước</span>
+                                </div>
+                                <!-- tab-control- -->
+                                <div class="field-control">
+                                    <ul class="nav nav-pills nav-fill">
+                                        <li class="nav-item mx-2">
+                                            <button class="nav-link bd-style active payment-percent" id="" data-bs-toggle="tab" data-bs-target="#full" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                                100%
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link bd-style  payment-percent" id="" data-bs-toggle="tab" data-bs-target="#half" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                                50%
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- content -->
+                            <div class="tab-content" id="myTabContent">
+
+                                <!-- 100% -->
+                                <div class="tab-pane fade show active full-segment" id="full" role="tabpanel" aria-labelledby="full">
+                                    <div class="text-light bg-secondary p-2 text-head">
+                                        Quý khách được miễn phí xử lý giao dịch
+                                    </div>
+                                    <div class="order-info-field total-product-price-field is-border-bottom d-flex">
+                                        <div class="field-title">Tổng tiền sản phẩm</div>
+                                        <div class="total-product-price">39.001.000 <sup>đ</sup></div>
+                                    </div>
+                                   
+                                    <!-- voucher -->
+                                    <div class="order-info-field total-product-price-field is-border-bottom">
+                                        <div class="d-flex">
+                                            <div class="field-head"><span class="field-title">Mã giảm giá</span></div>
+                                            <div class="head-control-col dropdown">
+                                                <div class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Chọn mã giảm giá
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </div>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <div class="empty-discount-field">
+                                                        <div class="discount-icon">
+                                                            <img src="	https://stfe.fadoglobal.io/desktop/image/page/order-page/discount-icon.png" alt="">
+                                                        </div>
+                                                        <div class="note">Quý khách chưa có mã giảm giá nào</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- textbox voucher -->
+                                        <div class="discount-code-segment my-1">
+                                            <form action="" class="discount-code-form">
+                                                <input type="text" placeholder="Nhập mã giảm giá" class="discount-code-input">
+                                                <button class="submit-btn">Áp dụng</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- Total order -->
+                                    <div class="order-price-field p-2 text-light d-flex">
+                                        <span><b>Tổng chi phí <br> đặt đơn hàng</b></span>
+                                        <div class="order-price-number fw-bold">
+                                            39.001.000 <sup>đ</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="section-head d-flex p-2">
+                                        <div class="product-check">
+                                            <form action="">
+                                                <div class="check-service mt-1">
+                                                    <input type="checkbox" id="" name="" value="">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="title-col ">
+                                            <a href="#" class="titl-segment">
+                                                <span class="confirm-fado-condition-label">Đồng ý với điều khoản & điều kiện giao dịch  của Fado Việt Nam</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- ordered -->
+                                    <div class="ordered p-2 pb-2">
+                                        <button class="btn btn-dark submit-order-info-btn ">Đặt mua</button>
+                                    </div>
+                                </div>
+
+                                <!-- 50% -->
+                                <div class="tab-pane fade show mt-3" id="half" role="tabpanel" aria-labelledby="half">
+                                    <div class="text-light bg-secondary p-2 text-head">
+                                        Fado sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng cửa Quý Khách
+                                    </div>
+                                    <div class="order-info-field total-product-price-field is-border-bottom d-flex">
+                                        <div class="field-title">Tổng tiền sản phẩm</div>
+                                        <div class="total-product-price">39.001.000 <sup>đ</sup></div>
+                                    </div>
+
+                                    <!-- voucher -->
+                                    <div class="order-info-field total-product-price-field is-border-bottom">
+                                        <div class="d-flex">
+                                            <div class="field-head"><span class="field-title">Mã giảm giá</span></div>
+                                            <div class="head-control-col dropdown">
+                                                <div class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Chọn mã giảm giá
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </div>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <div class="empty-discount-field">
+                                                        <div class="discount-icon">
+                                                            <img src="	https://stfe.fadoglobal.io/desktop/image/page/order-page/discount-icon.png" alt="">
+                                                        </div>
+                                                        <div class="note">Quý khách chưa có mã giảm giá nào</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- textbox voucher -->
+                                        <div class="discount-code-segment my-1">
+                                            <form action="" class="discount-code-form">
+                                                <input type="text" placeholder="Nhập mã giảm giá" class="discount-code-input">
+                                                <button class="submit-btn">Áp dụng</button>
+                                            </form>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <!-- collapse -->
+                                    <div class="collapse-order p-1">
+                                        <div class="field-mask d-flex" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            <div class="filed-title">
+                                                Phụ phí tiện ích <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="other-cost-value">
+                                                + 858.000 <sup>đ</sup>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="order-info-dropdown p-2 mb-1 collapse" id="collapseExample">
+                                            <div class="order-info-field order-cost-dropdown-field is-inline d-flex mx-1">
+                                                <div class="field-title">Phụ bù trừ thanh toán tương ứng</div>
+                                                <div class="other-cost-value"> + 858.000 <sup>đ</sup></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Total order -->
+                                    <div class="order-price-field p-2 text-light d-flex">
+                                        <span><b>Tổng chi phí <br> đặt đơn hàng</b></span>
+                                        <div class="order-price-number fw-bold">
+                                            39.001.000 <sup>đ</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="first-payment-value-field first-pay d-flex">
+                                        <div class="field-title">Số tiền thanh toán trước</div>
+                                        <div class="percent-cost-value">
+                                            19.929.500 <sup>đ</sup>
+                                        </div>
+                                    </div>
+                                    <div class="order-info-field first-payment-value-field d-flex">
+                                        <div class="field-title">Số tiền còn lại</div>
+                                        <div class="percent-cost-value">
+                                            19.929.500 <sup>đ</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="section-head d-flex p-2">
+                                        <div class="product-check">
+                                            <form action="">
+                                                <div class="check-service mt-1">
+                                                    <input type="checkbox" id="" name="" value="">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="title-col ">
+                                            <a href="#" class="titl-segment">
+                                                <span class="confirm-fado-condition-label">Đồng ý với điều khoản & điều kiện giao dịch  của Fado Việt Nam</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- ordered -->
+                                    <div class="ordered p-2 pb-2">
+                                        <button class="btn btn-dark submit-order-info-btn ">Đặt mua</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+    <!-- footer -->
+    <footer class="order-footer-section">
+        <div class="container d-flex p-3">
+            <div class="footer-content-col">
+                <b>Fado.vn</b> - Fado.vn - Sàn thương mại điện tử xuyên biên giới hàng đầu Việt Nam
+                <br>Giấy phép số 0107170526. Chịu trách nhiệm: Fado Global
+            </div>
+            <div class="footer-meta-info-col">
+                <a href="#"><img src="	https://stfe.fadoglobal.io/desktop/image/icons/bo-cong-thuong.png?v=3.192.2.0" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

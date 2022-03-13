@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+.fadopay-disable{
+    position: relative;
+}
+.fadopay-disable .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.fadopay-disable .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.fadopay-disable:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+</style>
+<body style="text-align:center;">
+<h1>ánh</h1>
+    <div class="col-md-6  effect d-flex fadopay-disable is-disable mt-5">
+        <div class="logo-col">
+            <img src="	https://static.fado.vn/uploads/payment-method/2021/01/08/Fado.VN_1610090289.7319.svg" alt="">
+        </div>
+        <div class="title-col-payment">
+            <span class="title-label ">FadoPay</span>
+        </div>
+        <span class="tooltiptext">
+            Hiện tại điểm FadoPay của Quý Khách
+        </span>
+    </div>
+
+</body>
+</html>

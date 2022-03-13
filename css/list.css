@@ -486,16 +486,16 @@ input.number-control-input::-webkit-inner-spin-button{
 .cart-summary-block .fee-ship img {
     filter: invert(49%) contrast(100%) brightness(100%);
 }
-.cart-summary-block .discount-code-segment {
+.discount-code-segment {
     align-items: center;
     display: flex;
 }
-.cart-summary-block .discount-code-form {
+.discount-code-form {
     height: 40px;
     position: relative;
     width: 320px;
 }
-.cart-summary-block .discount-code-form .discount-code-input {
+.discount-code-form .discount-code-input {
     border: 1px solid #ccd2dc;
     border-radius: 4px;
     height: 40px;
@@ -503,7 +503,7 @@ input.number-control-input::-webkit-inner-spin-button{
     transition: .3s;
     width: 100%;
 }
-.cart-summary-block .discount-code-form .submit-btn {
+.discount-code-form .submit-btn {
     background: #2e2e2e;
     border: 0;
     border-radius: 0 4px 4px 0;
@@ -518,7 +518,7 @@ input.number-control-input::-webkit-inner-spin-button{
     transition: .3s;
     width: 82px;
 }
-.cart-summary-block .discount-code-form .submit-btn:before {
+.discount-code-form .submit-btn:before {
     border-color: transparent transparent #2e2e2e;
     border-style: solid;
     border-width: 0 0 40px 12px;
@@ -531,7 +531,7 @@ input.number-control-input::-webkit-inner-spin-button{
     width: 0;
 }
 .discount-code-input::-webkit-input-placeholder { /* Edge */
-    color: rgb(180, 175, 175);
+    color: #ccd2dc;
   }
 .cart-summary-block .price-col {
     margin-left: auto;
