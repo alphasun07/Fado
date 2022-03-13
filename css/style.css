@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 body {
     background: #fff;
     color: #000;
-    font-family: Roboto;
+    font-family: Roboto, Lato;
     font-size: 14px;
     min-width: 1280px;
     top: 0!important;
@@ -217,6 +218,152 @@ a, a:active, a:focus, a:hover {
     font-size: 11px;
     line-height: 18px;
     padding: 0 8px;
+    cursor: pointer;
+}
+.user-fado-vip .dropdown-menu {
+    background: rgba(0,0,0,.9);
+    border-radius: 16px;
+    min-width: 432px;
+    overflow: hidden;
+    width: 432px;
+    z-index: 30;
+}
+.user-fado-vip .dropdown-menu__inner-space {
+    padding: 16px 16px 32px;
+    position: relative;
+    z-index: 0;
+}
+.user-fado-vip .user-fado-vip-header .slogan-label, 
+.user-fado-vip .user-fado-vip-header .title-label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+.user-fado-vip .fado-vip-info-item {
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 16px;
+    overflow: hidden;
+    padding: 12px 16px;
+}
+.user-fado-vip .icon-col {
+    align-items: center;
+    display: inline-flex;
+    margin-right: 12px;
+}
+.user-fado-vip .icon-col img {
+    position: relative;
+    top: -1px;
+}
+.user-fado-vip .content-col {
+    flex: 1 0 auto;
+}
+.user-fado-vip .content-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.user-fado-vip .title-label {
+    color: #303846;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 4px;
+    margin-right: -60px;
+}
+.user-fado-vip .benefit-label {
+    color: #171717;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.user-fado-vip .desc-label {
+    color: #505f77;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 4px;
+}
+.user-fado-vip .condition-col {
+    text-align: right;
+}
+.user-fado-vip .point-condition-field {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+    text-align: right;
+}
+.user-fado-vip .point-condition-icon {
+    flex: 0 0 18px;
+    height: 18px;
+    margin-right: 2px;
+    width: 18px;
+}
+.user-fado-vip .compare-icon {
+    flex: 0 0 18px;
+    max-height: 14px;
+}
+.user-fado-vip .point-condition-label {
+    color: #2e2e2e;
+    font-family: Oswald,Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-left: 2px;
+}
+.user-fado-vip .fee-condition-field {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex: 0 0 190px;
+    height: 28px;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: 0 12px;
+    position: relative;
+    text-align: right;
+    width: 190px;
+    z-index: 0;
+}
+.fado-vip-info-item .fee-condition-field:before {
+    background: #505f77;
+    border-top-left-radius: 4px;
+    bottom: 0;
+    flex: 0 0 110%;
+    height: calc(100% - 8px);
+    left: 6px;
+    width: 110%;
+}
+
+.fado-vip-info-item .fee-cost, 
+.fado-vip-info-item .fee-label {
+    color: #303846;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.fado-vip-info-item .upgrade-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -16px -28px 0;
+    transform: translateY(-16px);
+}
+.fado-vip-info-item .fee-condition-field.silver-level:after {
+    background: #d4ddf5;
+}
+.fado-vip-info-item .fee-condition-field:after {
+    border-top-left-radius: 6px;
+    bottom: 0;
+    flex: 0 0 110%;
+    height: 100%;
+    left: 14px;
+    width: 110%;
 }
 .panel-label {
     text-transform: uppercase!important;

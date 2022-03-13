@@ -102,11 +102,54 @@
                         <a href="login.html" class="btn btn-dark btn-outline-dark text-light btn-login">Đăng nhập</a>
 
                         <!-- VIP -->
-                        <div class="user-fado-vip ml-4">
-                            <div class="panel-head">
+                        <div class="user-fado-vip ml-4 dropdown" >
+                            <div class="panel-head" id="VIP" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="panel-icon"><i class="fas fa-crown"></i></span>
                                 <b class="panel-label">Fado VIP</b>
                                 <span class="panel-arrow"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+
+                            <!-- modal VIP -->
+                            <div class="dropdown-menu" aria-labelledby="VIP">
+                                <div class="dropdown-menu__inner-space">
+                                    <div class="user-fado-vip-header mt-2">
+                                        <div class="title-label">FADO VIP CLUB</div>
+                                        <div class="slogan-label">Tận hưởng nhiều quyền lợi & ưu đãi mỗi ngày</div>
+                                    </div>
+                                    <!-- list item -->
+                                    <div class="fado-vip-info-item-list">
+                                        <div class="fado-vip-info-item">
+                                            <div class="icon-col">
+                                                <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/member-silver-symbol.svg?v=3.192.2.0" alt="">
+                                            </div>
+                                            <div class="content-col">
+                                                <div class="content-row">
+                                                    <div class="info-col">
+                                                        <div class="title-label">Fado Silver</div>
+                                                        <div class="benefit-label">Giảm giá 1.5%</div>
+                                                        <div class="desc-label">trên mỗi sản phẩm</div>
+                                                    </div>
+                                                    <div class="condition-col">
+                                                        <div class="point-condition-field">
+                                                            <img src="	https://stfe.fadoglobal.io/desktop/image/icon-svg/fado-coin-v2.svg?v=3.192.2.0" class="point-condition-icon" alt="">
+                                                            <img src="	https://stfe.fadoglobal.io/desktop/image/icon-svg/icon-larger-equal.svg?v=3.192.2.0" class="compare-icon" alt="">
+                                                            <span class="point-condition-label">17217</span>
+                                                        </div>
+                                                        <span class="">hoặc</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="upgrade-row">
+                                                    <div class="fee-condition-field silver-level">
+                                                        <span class="fee-label">NÂNG HẠNG NGAY</span>
+                                                        <span class="fee-cost">$99</span>
+                                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
