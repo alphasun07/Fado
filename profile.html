@@ -16,7 +16,7 @@
 </head>
 <body>
      <!-- nav -->
-    <section id="header-section" class="header-section" >
+     <section id="header-section" class="header-section" >
         <div class="section-body">
             <!-- main-block -->
             <div class="header-main-block ">
@@ -76,7 +76,8 @@
                             <button type="submit" class="submit-btn">
                                 <span class="submit-btn-bg"></span>
                                 <span class="submit-btn-label">
-                                    <i class="fas fa-search"></i>                                </span>
+                                    <i class="fas fa-search"></i>                                
+                                </span>
                             </button>
                         </div>
                     </div>
@@ -84,10 +85,14 @@
                     <!-- user -->
                     <div class="user-col col-md-5">
                         <!-- cart -->
-                        <div class="cart-dropdown">
-                            <a href="cart.html" class="cart-btn">
-                                <span class="cart-icon"></span>
-                                <span class="cart-quantity"></span>
+                        <div class="info-col info-line">
+                            <a href="cart.html"class="header-cart-info">
+                                <div class="header-cart-btn">
+                                    <span class="btn-cart-head">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <span class="header-cart-quantity">5</span>
+                                </div>
                             </a>
                         </div>
 
@@ -101,14 +106,239 @@
                         </div>
 
                         <!-- login -->
-                        <a href="login.html" class="btn btn-dark btn-outline-dark text-light btn-login">Đăng nhập</a>
+                        <div class="dropdown mt-2 mx-2">
+                            <div class="" type="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mẹ Lợn
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="dropdown-menu mt-2" aria-labelledby="profile">
+                                <div class="os-content-profile">
+                                    <div class="dropdown-menu__inner-space">
+                                        <div class="user-info-menu-segment user-info-nenu-head">
+                                            <div class="segment-item mt-1">
+                                                <div class="segment-item-body">
+                                                    <div class="user-name-label-col">
+                                                        <a href="#" class="user-name-label">Mẹ Lợn</a>
+                                                    </div>
+                                                    <div class="user-edit-profile-icon-col">
+                                                        <a href="#" class="user-edit-profile-icon-shape">
+                                                            <img src="https://stfe.fadoglobal.io/desktop/image/icons/pen-edit-gray-icon.svg" class="mx-1" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="segment-item mt-2">
+                                                <div class="fado-coin-wallet d-flex">
+                                                    <span><i class="fa-solid fa-wallet mt-1"></i></span>
+                                                    <div class="fado-coin-wallet-text mx-1">Địa chỉ ví: </div>
+                                                    <a href="#" class="fado-coin-wallet-address mt-1">0xb6d646c3Ea7a8a0d44B5a72DAd572d7559B897e5  </a>
+                                                    <button class="fado-coin-wallet-copy rounded-circle">
+                                                        <span><i class="fa-regular fa-copy"></i></span>
+                                                    </button>
+                                                    <button class="fado-coin-wallet-copy rounded-circle">
+                                                        <span><i class="fa-solid fa-qrcode"></i></span>
+                                                    </button>
+                                                </div>
+                                            </div>
 
+                                            <div class="segment-item mt-2 d-flex">
+                                                <div class="fado-coin-link-label">Nhận thêm Loyalty Points</div>
+                                                <a href="#" class="fado-coin-link-label">Hướng dẫn</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-menu__inner-space mt-2">
+                                        <ul class="user-menu-list">
+                                            <li class="menu-item-outer">
+                                                <a href="#" class="menu-item mx-1">
+                                                    <span class="menu-item-icon"><i class="fa-solid fa-receipt"></i></span>
+                                                    <div class="label-col mx-2">Đơn hàng</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item-outer">
+                                                <a href="#" class="menu-item mx-1">
+                                                    <span class="menu-item-icon"><i class="fa-regular fa-heart"></i></span>
+                                                    <div class="label-col mx-2">Danh sách yêu thích</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item-outer">
+                                                <a href="#" class="menu-item mx-1">
+                                                    <span class="menu-item-icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+                                                    <div class="label-col mx-2">Yêu cầu báo giá</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item-outer">
+                                                <a href="#" class="menu-item mx-1">
+                                                    <span class="menu-item-icon"><i class="fa-solid fa-percent"></i></span>
+                                                    <div class="label-col mx-2">Mã giảm giá</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="user-menu-list mx-1 boder-logout ">
+                                            <div class="menu-item-outer mt-2">
+                                                <a href="#" class="menu-item">
+                                                    <span class="menu-item-icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                                                    <div class="label-col">Thoát khỏi tài khoản hiện tại</div>
+                                                </a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
                         <!-- VIP -->
-                        <div class="user-fado-vip ml-4">
-                            <div class="panel-head">
+                        <div class="user-fado-vip ml-4 dropdown mx-1" >
+                            <div class="panel-head" id="VIP" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="panel-icon"><i class="fas fa-crown"></i></span>
                                 <b class="panel-label">Fado VIP</b>
                                 <span class="panel-arrow"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+
+                            <!-- modal VIP -->
+                            <div class="dropdown-menu mt-3 mx-2" aria-labelledby="VIP">
+                                <div class="dropdown-menu__inner-space">
+                                    <div class="user-fado-vip-header mt-1 mb-2">
+                                        <div class="title-label">FADO VIP CLUB</div>
+                                        <div class="slogan-label">Tận hưởng nhiều quyền lợi & ưu đãi mỗi ngày</div>
+                                    </div>
+                                    <!-- list item -->
+                                    <div class="fado-vip-info-item-list">
+                                        <!-- silver -->
+                                        <div class="fado-vip-info-item">
+                                            <div class="icon-col">
+                                                <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/member-silver-symbol.svg?v=3.192.2.0" alt="">
+                                            </div>
+                                            <div class="content-col">
+                                                <div class="content-row">
+                                                    <div class="info-col">
+                                                        <div class="title-label">Fado Silver</div>
+                                                        <div class="benefit-label">Giảm giá 1.5%</div>
+                                                        <div class="desc-label">trên mỗi sản phẩm</div>
+                                                    </div>
+                                                    <div class="condition-col">
+                                                        <div class="point-condition-field">
+                                                            <img src="	https://stfe.fadoglobal.io/desktop/image/icon-svg/fado-coin-v2.svg?v=3.192.2.0" class="point-condition-icon" alt="">
+                                                            <img src="	https://stfe.fadoglobal.io/desktop/image/icon-svg/icon-larger-equal.svg?v=3.192.2.0" class="compare-icon" alt="">
+                                                            <span class="point-condition-label">17217</span>
+                                                        </div>
+                                                        <span class="text-small">hoặc</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="upgrade-row">
+                                                    <div class="fee-condition-field silver-level">
+                                                        <span class="fee-label">NÂNG HẠNG NGAY</span>
+                                                        <span class="fee-cost mx-1">$99</span>
+                                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- gold -->
+                                        <div class="fado-vip-info-item">
+                                            <div class="icon-col">
+                                                <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/member-gold-symbol.svg?v=3.192.2.0" alt="">
+                                            </div>
+                                            <div class="content-col">
+                                                <div class="content-row">
+                                                    <div class="info-col">
+                                                        <div class="title-label">Fado Gold</div>
+                                                        <div class="benefit-label">Giảm giá 3%</div>
+                                                        <div class="desc-label">trên mỗi sản phẩm</div>
+                                                    </div>
+                                                    <div class="condition-col">
+                                                        <div class="point-condition-field">
+                                                            <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/fado-coin-v2.svg?v=3.192.2.0" class="point-condition-icon" alt="">
+                                                            <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/icon-larger-equal.svg?v=3.192.2.0" class="compare-icon" alt="">
+                                                            <span class="point-condition-label">27652</span>
+                                                        </div>
+                                                        <span class="text-small">hoặc</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="upgrade-row">
+                                                    <div class="fee-condition-field gold-level">
+                                                        <span class="fee-label">NÂNG HẠNG NGAY</span>
+                                                        <span class="fee-cost mx-1">$159</span>
+                                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Platinum -->
+                                        <div class="fado-vip-info-item">
+                                            <div class="icon-col">
+                                                <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/member-platinum-symbol.svg?v=3.192.2.0" alt="">
+                                            </div>
+                                            <div class="content-col">
+                                                <div class="content-row">
+                                                    <div class="info-col">
+                                                        <div class="title-label">Fado Platinum</div>
+                                                        <div class="benefit-label">Giảm giá 4%</div>
+                                                        <div class="desc-label">trên mỗi sản phẩm</div>
+                                                    </div>
+                                                    <div class="condition-col">
+                                                        <div class="point-condition-field">
+                                                            <img src="	https://stfe.fadoglobal.io/desktop/image/icon-svg/fado-coin-v2.svg?v=3.192.2.0" class="point-condition-icon" alt="">
+                                                            <img src="	https://stfe.fadoglobal.io/desktop/image/icon-svg/icon-larger-equal.svg?v=3.192.2.0" class="compare-icon" alt="">
+                                                            <span class="point-condition-label">41565</span>
+                                                        </div>
+                                                        <span class="text-small">hoặc</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="upgrade-row">
+                                                    <div class="fee-condition-field platinum-level">
+                                                        <span class="fee-label">NÂNG HẠNG NGAY</span>
+                                                        <span class="fee-cost mx-1">$239</span>
+                                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- super vip -->
+                                        <div class="fado-vip-info-item">
+                                            <div class="icon-col">
+                                                <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/member-supervip-symbol.svg?v=3.192.2.0" alt="">
+                                            </div>
+                                            <div class="content-col">
+                                                <div class="content-row">
+                                                    <div class="info-col">
+                                                        <div class="title-label">Fado Super Vip</div>
+                                                        <div class="benefit-label">Giảm giá 1.5%</div>
+                                                        <div class="desc-label">trên mỗi sản phẩm</div>
+                                                    </div>
+                                                    <div class="condition-col">
+                                                        <div class="point-condition-field">
+                                                            <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/fado-coin-v2.svg?v=3.192.2.0" class="point-condition-icon" alt="">
+                                                            <img src="https://stfe.fadoglobal.io/desktop/image/icon-svg/icon-larger-equal.svg?v=3.192.2.0" class="compare-icon" alt="">
+                                                            <span class="point-condition-label">273608</span>
+                                                        </div>
+                                                        <span class="text-small">hoặc</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="upgrade-row">
+                                                    <div class="fee-condition-field supervip-level">
+                                                        <span class="fee-label">NÂNG HẠNG NGAY</span>
+                                                        <span class="fee-cost mx-1">$899</span>
+                                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- footer -->
+                                    <div class="user-fado-vip-footer text-center mt-2">
+                                        <a href="#" class="readmore-btn-field rounded-pill btn">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -124,6 +354,7 @@
                 </div>
 
             </div>
+           
         </div>
         <!-- section foot -->
         <div class="section-foot">

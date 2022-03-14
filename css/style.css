@@ -220,6 +220,26 @@ a, a:active, a:focus, a:hover {
     padding: 0 8px;
     cursor: pointer;
 }
+.user-fado-vip .dropdown-menu__inner-space:before {
+    background: url(../img/user-fado-vip-bg-top.png) top/100% auto no-repeat;
+    height: 418px;
+    top: -10px;
+}
+.user-fado-vip .dropdown-menu__inner-space:after {
+    background: url(../img/user-fado-vip-bg-bottom.png) bottom/100% auto no-repeat;
+    bottom: 0;
+    height: 169px;
+    opacity: .4;
+}
+.user-fado-vip .dropdown-menu__inner-space:after, 
+.user-fado-vip .dropdown-menu__inner-space:before {
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
 .user-fado-vip .dropdown-menu {
     background: rgba(0,0,0,.9);
     border-radius: 16px;
@@ -229,7 +249,7 @@ a, a:active, a:focus, a:hover {
     z-index: 30;
 }
 .user-fado-vip .dropdown-menu__inner-space {
-    padding: 16px 16px 32px;
+    padding: 16px 16px 18px;
     position: relative;
     z-index: 0;
 }
@@ -267,14 +287,7 @@ a, a:active, a:focus, a:hover {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-.user-fado-vip .title-label {
-    color: #303846;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 4px;
-    margin-right: -60px;
-}
+
 .user-fado-vip .benefit-label {
     color: #171717;
     font-size: 14px;
@@ -309,11 +322,29 @@ a, a:active, a:focus, a:hover {
 }
 .user-fado-vip .point-condition-label {
     color: #2e2e2e;
-    font-family: Oswald,Roboto;
+    font-family: Lato;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     margin-left: 2px;
+}
+.user-fado-vip .text-small{
+    font-size: 12px;
+}
+.fado-vip-info-item .fee-cost, 
+.fado-vip-info-item .fee-label {
+    color: #303846;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.user-fado-vip .upgrade-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -16px -28px 0;
+    transform: translateY(-16px);
 }
 .user-fado-vip .fee-condition-field {
     align-items: center;
@@ -329,7 +360,19 @@ a, a:active, a:focus, a:hover {
     width: 190px;
     z-index: 0;
 }
-.fado-vip-info-item .fee-condition-field:before {
+.user-fado-vip .fee-cost, 
+.user-fado-vip .fee-label {
+    color: #303846;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.user-fado-vip .fee-cost {
+    margin-left: 2px;
+}
+.user-fado-vip .fee-condition-field::before {
     background: #505f77;
     border-top-left-radius: 4px;
     bottom: 0;
@@ -338,32 +381,39 @@ a, a:active, a:focus, a:hover {
     left: 6px;
     width: 110%;
 }
-
-.fado-vip-info-item .fee-cost, 
-.fado-vip-info-item .fee-label {
-    color: #303846;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 18px;
-    text-transform: uppercase;
-}
-.fado-vip-info-item .upgrade-row {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 -16px -28px 0;
-    transform: translateY(-16px);
-}
-.fado-vip-info-item .fee-condition-field.silver-level:after {
+.user-fado-vip .fee-condition-field.silver-level::after {
     background: #d4ddf5;
 }
-.fado-vip-info-item .fee-condition-field:after {
+.user-fado-vip .fee-condition-field.gold-level:after {
+    background: #ffc152;
+}
+.user-fado-vip .fee-condition-field.platinum-level:after {
+    background: #dbc9f4;
+}
+.user-fado-vip .fee-condition-field.supervip-level:after {
+    background: #ffccbc;
+}
+.user-fado-vip .fee-condition-field::after {
     border-top-left-radius: 6px;
     bottom: 0;
     flex: 0 0 110%;
     height: 100%;
     left: 14px;
     width: 110%;
+}
+.user-fado-vip .fee-condition-field:after, 
+.user-fado-vip .fee-condition-field:before {
+    content: "";
+    position: absolute;
+    
+    transform: skewX(-33deg);
+    z-index: -1;
+}
+.user-fado-vip-footer .readmore-btn-field{
+    background: #ffedcc;
+    color: #996200;
+    font-weight: 700;
+    text-align: center;
 }
 .panel-label {
     text-transform: uppercase!important;

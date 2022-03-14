@@ -590,3 +590,147 @@ input.number-control-input::-webkit-inner-spin-button{
     transform: unset;
 }
 /*  */
+/*  */
+/* profile */
+.user-info-menu-segment.user-info-nenu-head {
+    background: #f3f5f7;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0 1px 0 0 #eaedf1;
+    padding: 12px 16px;
+}
+.user-info-menu-segment .segment-item-body {
+    align-items: center;
+    display: flex;
+}
+.user-info-menu-segment .user-name-label-col {
+    display: flex;
+    flex: 1 1;
+    min-width: 0;
+}
+.user-info-menu-segment .user-name-label {
+    color: #303846;
+    flex: 1 1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.user-info-menu-segment .user-edit-profile-icon-col {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    padding-left: 16px;
+}
+.user-info-menu-segment .user-edit-profile-icon-shape {
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgb(204 210 220 / 70%);
+    height: 24px;
+    position: relative;
+    top: 1px;
+    width: 24px;
+    border-radius: 40px;
+    padding: 0;
+}
+.segment-item-body:hover .user-edit-profile-icon-shape {
+    background: #2e2e2e;
+    box-shadow: 0 2px 4px 0 rgb(46 46 46 / 40%);
+}
+.segment-item-body:hover .user-edit-profile-icon-shape img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+.fado-coin-wallet-copy{
+    background: #eaedf1;
+    border-color: #eaedf1;
+    color: #505f77;
+    border: none;
+}
+.fado-coin-wallet-copy:hover{
+    background: #2e2e2e;
+    color: #fff;
+    border: none;
+}
+.fado-coin-wallet-copy i{
+    font-size: 13px;
+}
+.fado-coin-wallet .fado-coin-wallet-text {
+    white-space: nowrap;
+}
+.fado-coin-wallet .fado-coin-wallet-address {
+    color: #98a5b9;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-left: 8px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.user-col .dropdown-menu{
+    max-width: 300px;
+}
+.fado-coin-wallet-text{
+    font-size: 14px;
+    color: #505f77;
+    margin-top: 2px;
+}
+.user-info-menu-segment .fado-coin-link-label:before {
+    background: #98a5b9;
+    content: "";
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 1px;
+}
+.user-info-menu-segment .fado-coin-link-label {
+    align-items: center;
+    color: #2e2e2e;
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 8px;
+    position: relative;
+}
+.user-info-menu-segment .fado-coin-link-label:last-child:before {
+    opacity: 0;
+}
+.header-main-block .user-menu-list {
+    list-style: none;
+}
+.header-main-block .user-menu-list .menu-item {
+    align-items: center;
+    border-radius: 4px;
+    color: rgb(93 93 93);
+    display: flex;
+    padding: 8px 12px;
+    transition: .3s;
+}
+.header-main-block .user-menu-list .menu-item-icon {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1px;
+    transition: .3s;
+}
+.header-main-block .user-menu-list .label-col {
+    flex: 1 1;
+    font-size: 15px;
+}
+.user-menu-list{
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+.header-main-block .user-menu-list .menu-item:hover {
+    background: #eaedf1;
+}
+.header-main-block .boder-logout{
+    border-top: 1px solid #ccc;
+}
