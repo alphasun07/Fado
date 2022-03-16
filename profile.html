@@ -619,7 +619,7 @@
 
     <!-- user-layout -->
     <div class="user-layout mt-5">
-        <div class="container">
+        <div class="container d-flex">
             <div class="user-layout__sidebar-col">
                 <div class="users-block">
                     <div class="user-menu-segment">
@@ -630,19 +630,358 @@
                                 </div>
                                 <div class="head-title-col mx-2">Tài khoản</div>
                             </a>
-                            <div class="box-body">
-                                <ul class="user-feature-item-list navbar-nav">
-                                    <li class="feature-item " >
-                                        <a href="#" class="feature-label active ">Thông tin tài khoản</a>
+                            <div class="box-body mt-1">
+                                <ul class="nav user-feature-item-list">
+                                    <li class="nav-item feature-item">
+                                      <button class="nav-link active feature-label" id="" data-bs-toggle="tab" data-bs-target="#info-user" type="button" role="tab" aria-controls="home" aria-selected="true" aria-current="page">Thông tin tài khoản</button>
                                     </li>
-                                    <li class="feature-item">
-                                        <a href="#" class="feature-label ">Thông báo</a>
+                                    <li class="nav-item feature-item">
+                                        <button class="nav-link bd-style feature-label" id="" data-bs-toggle="tab" data-bs-target="#notice" type="button" role="tab" aria-controls="profile" aria-selected="false">Thông báo</button>
                                     </li>
-                                    <li class="feature-item">
-                                        <a href="reset-pass.html" class="feature-label">Thay đổi mật khẩu</a>
+                                    <li class="nav-item feature-item">
+                                        <button class="nav-link bd-style feature-label" id="" data-bs-toggle="tab" data-bs-target="#pass" type="button" role="tab" aria-controls="profile" aria-selected="false">Thay đổi mật khẩu</button>
                                     </li>
-                                </ul>
+                                  </ul>
                             </div>
+                        </div>
+
+                        <!-- sổ địa chỉ -->
+                        <div class="user-feature-box mt-4">
+                            <ul class="nav address-nav">
+                                <li class="nav-item">
+                                    <div class="nav-link d-flex" id="" data-bs-toggle="tab" data-bs-target="#info-user" type="button" role="tab" aria-controls="home" aria-selected="false">
+                                        <div class="head-icon-col">
+                                            <span class="icon-shape"><i class="fa-solid fa-address-book"></i></span>
+                                        </div>
+                                        <div class="head-title-col mx-2">Sổ địa chỉ</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!--Tài khoản trả trước  -->
+                        <div class="user-feature-box mt-4">
+                            <a href="#" class="d-flex">
+                                <div class="head-icon-col">
+                                    <span class="icon-shape"><i class="fa-solid fa-wallet"></i></span>
+                                </div>
+                                <div class="head-title-col mx-2">Tài khoản trả trước</div>
+                            </a>
+                            <div class="box-body mt-1">
+                                <ul class="nav user-feature-item-list">
+                                    <li class="nav-item feature-item">
+                                      <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#request-management" type="button" role="tab" aria-controls="home" aria-selected="false" >Quản lý yêu cầu</button>
+                                    </li>
+                                    <li class="nav-item feature-item">
+                                        <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#transaction" type="button" role="tab" aria-controls="profile" aria-selected="false">Lịch sử giao dịch</button>
+                                    </li>
+                                    
+                                  </ul>
+                            </div>
+                        </div>
+
+                        <!-- quản lý mua hàng -->
+                        <div class="user-feature-box mt-4">
+                            <a href="#" class="d-flex">
+                                <div class="head-icon-col">
+                                    <span class="icon-shape"><i class="fa-solid fa-wallet"></i></span>
+                                </div>
+                                <div class="head-title-col mx-2">Quản lý mua hàng</div>
+                            </a>
+                            <div class="box-body mt-1">
+                                <ul class="nav user-feature-item-list">
+                                    <li class="nav-item feature-item">
+                                      <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#history-order" type="button" role="tab" aria-controls="home" aria-selected="false">Lịch sử đơn hàng</button>
+                                    </li>
+                                    <li class="nav-item feature-item">
+                                        <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#notice" type="button" role="tab" aria-controls="profile" aria-selected="false">Yêu cầu báo giá</button>
+                                    </li>
+                                    <li class="nav-item feature-item">
+                                        <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#notice" type="button" role="tab" aria-controls="profile" aria-selected="false">Theo dõi giá sản phẩm</button>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+
+                         <!-- sổ địa chỉ -->
+                         <div class="user-feature-box mt-4">
+                            <ul class="nav address-nav">
+                                <li class="nav-item">
+                                    <div class="nav-link d-flex" id="" data-bs-toggle="tab" data-bs-target="#info-user" type="button" role="tab" aria-controls="home" aria-selected="false">
+                                        <div class="head-icon-col">
+                                            <span class="icon-shape"><i class="fa-solid fa-tag"></i></span>
+                                        </div>
+                                        <div class="head-title-col mx-2">Mã giảm giá</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                         <!-- sản phẩm yêu thích -->
+                         <div class="user-feature-box mt-4">
+                            <ul class="nav address-nav">
+                                <li class="nav-item">
+                                    <div class="nav-link d-flex" id="" data-bs-toggle="tab" data-bs-target="#favourite product" type="button" role="tab" aria-controls="home" aria-selected="false">
+                                        <div class="head-icon-col">
+                                            <span class="icon-shape"><i class="fa-brands fa-gratipay"></i></span>
+                                        </div>
+                                        <div class="head-title-col mx-2">Sản phẩm yêu thích</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- đại sứ Fado -->
+                         <!-- quản lý mua hàng -->
+                         <div class="user-feature-box mt-4">
+                            <a href="#" class="d-flex">
+                                <div class="head-icon-col">
+                                    <span class="icon-shape"><i class="fa-solid fa-wallet"></i></span>
+                                </div>
+                                <div class="head-title-col mx-2">Đại sứ Fado</div>
+                            </a>
+                            <div class="box-body mt-1">
+                                <ul class="nav user-feature-item-list">
+                                    <li class="nav-item feature-item">
+                                      <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#info-user" type="button" role="tab" aria-controls="home" aria-selected="false">Quản lý đơn hàng giới thiệu</button>
+                                    </li>
+                                    <li class="nav-item feature-item">
+                                        <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#notice" type="button" role="tab" aria-controls="profile" aria-selected="false">Tạo liên kết giới thiệu</button>
+                                    </li>
+                                    <li class="nav-item feature-item">
+                                        <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#notice" type="button" role="tab" aria-controls="profile" aria-selected="false">Thông tin thanh toán</button>
+                                    </li>
+                                    <li class="nav-item feature-item">
+                                        <button class="nav-link feature-label" id="" data-bs-toggle="tab" data-bs-target="#notice" type="button" role="tab" aria-controls="profile" aria-selected="false">Đối soát</button>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content info -->
+            <div class="tab-content" id="myTabContent">
+                <!-- info -->
+                <div class="user-layout__main-col tab-pane fade show active" id="info-user" role="tabpanel" aria-labelledby="info-user">
+                    <div class="user-block">
+                        <div class="user-block__head__title-col">Thông tin tài khoản</div>
+                    </div>
+                    <div class="user-block__body">
+                        <form action="" class="user-block__input-form-group">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Họ và tên</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="VD: Nguyễn Văn A">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Điện thoại</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0123456789">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Ngày sinh</label>
+                                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="VD: 1-1-2001">
+                            </div>
+
+                            <div for="exampleFormControlInput1" class="form-label fw-bold">Giới tính</div>
+                            <div class="check d-flex">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Nam</label>
+                                </div>
+                                <div class="form-check mx-4">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label " for="flexRadioDefault2">Nữ</label>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark rounded-pill mt-3 mx-3">Nhập lại</button>
+                                <button class="btn btn-outline-dark rounded-pill mt-3">Xác nhận</button>    
+                            </div>
+                        </form>
+                       
+                    </div>
+                </div>
+
+                <!-- thông báo -->
+                <div class="user-layout__main-col tab-pane fade show" id="notice" role="tabpanel" aria-labelledby="notice">
+                    <div class="user-block">
+                        <div class="section-title">Thông tin</div>
+                    </div>
+                    <div class="section-body">
+                        <div class="notification-list-block">
+                            <div class="notification-card-wrap">
+                                <div class="notification-card d-flex">
+                                    <div class="notification-card__date-col">
+                                        <div class="notification-card__time">2:02</div>
+                                        <div class="notification-card__date">15-03-2022</div>
+                                    </div>
+                                    <div class="notification-card__icon-col">
+                                        <div class="notification-shape__icon p-2"></div>
+                                    </div>
+                                    <div class="notification-card__content-col">
+                                        <div class="notification-card__title fw-bold">Cập nhật thông tin tài khoản thành công</div>
+                                        <div class="notification-card__content mt-1">
+                                            Hãy cập nhật đầy đủ thông tin của Quý Khách để đảm bảo việc mua sắm được tiện lợi, an toàn, hiệu quả và nhận ngay 10 Fado coin
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notification-card d-flex">
+                                    <div class="notification-card__date-col">
+                                        <div class="notification-card__time">2:02</div>
+                                        <div class="notification-card__date">15-03-2022</div>
+                                    </div>
+                                    <div class="notification-card__icon-col">
+                                        <div class="notification-shape__icon p-2"></div>
+                                    </div>
+                                    <div class="notification-card__content-col">
+                                        <div class="notification-card__title fw-bold">Cập nhật thông tin tài khoản thành công</div>
+                                        <div class="notification-card__content mt-1">
+                                            Hãy cập nhật đầy đủ thông tin của Quý Khách để đảm bảo việc mua sắm được tiện lợi, an toàn, hiệu quả và nhận ngay 10 Fado coin
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pass -->
+                <div class="user-layout__main-col tab-pane fade show" id="pass" role="tabpanel" aria-labelledby="info-user">
+                    <div class="user-block">
+                        <div class="user-block__head__title-col">Thay đổi mật khẩu</div>
+                    </div>
+                    <div class="user-block__body">
+                        <form action="" class="user-block__input-form-group">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Mật khẩu hiện tại *</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Mật khẩu mới *</label>
+                                <input type="text" class="form-control" id="exampleFormControl" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Nhập lại mật khẩu mới *</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" required>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark rounded-pill mt-3 mx-3">Nhập lại</button>
+                                <button class="btn btn-outline-dark rounded-pill mt-3">Xác nhận</button>    
+                            </div>
+                        </form>
+                       
+                    </div>
+                </div>
+
+                <!-- request management -->
+                <div class="user-layout__main-col tab-pane fade show" id="request-management" role="tabpanel" aria-labelledby="notice">
+                    <div class="user-block d-flex">
+                        <div class="user-block__head__title-col">Fado - Tài khoản trả trước</div>
+                        <div class="user-wallet-add-wrapper">
+                            <div class="dropdown">
+                                <button class="btn btn-dark dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  + Nạp điểm
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Tạo yêu cầu nạp</a></li>
+                                  <li><a class="dropdown-item" href="#">Nạp bằng E-Gift card</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="user-wallet-empty-block">
+                        <div class="wallet-empty-content">
+                            <img src="img/wallet-request-empty.png" alt="">
+                        </div>
+                        <div class="wallet-empty-content-inner text-center mt-4 text-secondary">
+                            <p>Hãy nạp điểm ngay để chi tiêu thoải mái, dễ dàng kèm nhiều ưu đãi và điểm thưởng hấp dẫn.</p>
+                            <a href="#" class="btn btn-outline-dark rounded-pill">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- transaction -->
+                <div class="user-layout__main-col tab-pane fade show" id="transaction" role="tabpanel" aria-labelledby="transaction">
+                    <div class="user-block d-flex">
+                        <div class="user-block__head__title-col">Fado - Tài khoản trả trước</div>
+                        <div class="user-wallet-add-wrapper">
+                            <div class="dropdown">
+                                <button class="btn btn-dark dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  + Nạp điểm
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Tạo yêu cầu nạp</a></li>
+                                  <li><a class="dropdown-item" href="#">Nạp bằng E-Gift card</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="user-wallet-empty-block">
+                        <div class="wallet-empty-content" style="width:70%;">
+                            <img src="img/wallet-history-empty.png" alt="">
+                        </div>
+                        <div class="wallet-empty-content-inner text-center mt-4 text-secondary">
+                            <p>Chưa có bất kỳ giao dịch nào được thực hiện. Hãy tạo yêu cầu nạp điểm ngay để bắt đầu trải nghiệm tiện ích Tài khoản trả trước.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- history-order -->
+                <div class="user-layout__main-col tab-pane fade show" id="history-order" role="tabpanel" aria-labelledby="transaction">
+                    <div class="user-block--order-history__head d-flex justify-content-between">
+                        <div class="user-block--order-history__head-title fs-5 text fw-bold">Lịch sử giao hàng</div>
+                        <div class="user-block__manage-control-col d-flex">
+                            <form action="" class="mx-1">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Trạng thái đơn hàng</option>
+                                    <option value="1">Đã hủy - Chờ hoàn tiền</option>
+                                    <option value="2">Đã thanh toán - Chờ đối soát</option>
+                                    <option value="3">Đã thanh toán - Chờ kiểm duyệt</option>
+                                    <option value="3">Đã hủy</option>
+                                    <option value="3">Chờ thanh toán</option>
+
+                                </select>
+                            </form>
+                            <input placeholder="Từ ngày..." class="mx-1 mz-form-control__input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                            <input placeholder="Đến ngày..." class="mx-2 mz-form-control__input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                            <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="user-block--order-history__manage-body mt-5">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mã đơn hàng</th>
+                                <th scope="col">Khuyến mại</th>
+                                <th scope="col">Tổng tiền đơn hàng</th>
+                                <th scope="col">Trạng thái</th>
+                                <th scope="col">Ngày tạo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+
+                <!-- favourite product -->
+                <div class="user-layout__main-col tab-pane fade show" id="history-order" role="tabpanel" aria-labelledby="transaction">
+                    <div class="user-block--favorite-product__manage-body">
+                        <div class="user-block--favorite-product__item-title">
+                            
                         </div>
                     </div>
                 </div>
