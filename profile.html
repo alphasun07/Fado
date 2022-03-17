@@ -721,7 +721,7 @@
                          <div class="user-feature-box mt-4">
                             <ul class="nav address-nav">
                                 <li class="nav-item">
-                                    <div class="nav-link d-flex" id="" data-bs-toggle="tab" data-bs-target="#favourite product" type="button" role="tab" aria-controls="home" aria-selected="false">
+                                    <div class="nav-link d-flex" id="" data-bs-toggle="tab" data-bs-target="#favourite-product" type="button" role="tab" aria-controls="home" aria-selected="false">
                                         <div class="head-icon-col">
                                             <span class="icon-shape"><i class="fa-brands fa-gratipay"></i></span>
                                         </div>
@@ -978,10 +978,49 @@
                 </div>
 
                 <!-- favourite product -->
-                <div class="user-layout__main-col tab-pane fade show" id="history-order" role="tabpanel" aria-labelledby="transaction">
+                <div class="user-layout__main-col tab-pane fade show" id="favourite-product" role="tabpanel" aria-labelledby="transaction">
                     <div class="user-block--favorite-product__manage-body">
-                        <div class="user-block--favorite-product__item-title">
+                        <div class="user-block--favorite-product__item-list fw-bold fs-4 text">
+                            Hình ảnh
+                        </div>
+                        <div class="user-block--favorite-product__manage-body mt-5">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Hình ảnh</th>
+                                    <th scope="col">Sản phẩm</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><img src="img/bosch.png" alt=""></td>
+                                    <td class="fs-6 text">Men's Black Gancini Loafers</td>
+                                    <td><button class="btn btn-outline-dark rounded-pill delete-product"  data-bs-toggle="modal" data-bs-target="#delete-favourite">Xóa</button></td>
+                                  </tr>
+                                 
+                                </tbody>
+                            </table>
                             
+                            <!-- Modal -->
+                            <div class="modal fade" id="delete-favourite" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="title">Quý khách có chắc chắn muốn xóa sản phẩm này?</div>  
+                                        <div class="control text-center mt-2">
+                                            <button type="button" class="btn btn-secondary mx-1 rounded-pill delete-product" data-bs-dismiss="modal">Đóng</button>
+                                            <button type="button" class="btn btn-dark mx-1 rounded-pill delete-product">Có</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

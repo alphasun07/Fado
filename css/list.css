@@ -990,3 +990,22 @@ input.mz-form-control__input {
     color: #88898a;
     font-size: 500;
 }
+.user-block--favorite-product__manage-body .table img{
+    width: 50%;
+}
+.user-block--favorite-product__manage-body .table th{
+    background: rgba(234,237,241,.2);
+    border-bottom: 1px solid #eaedf1;
+    border-top: 1px solid #eaedf1;
+    color: #98a5b9;
+    font-weight: 700;
+    padding: 16px;
+    text-align: center;
+}
+.modal.show .modal-dialog {
+    transform: none;
+    top: 30%;
+}
+.modal.show .delete-product{
+    padding: 7px 35px;
+}
