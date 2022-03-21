@@ -69,3 +69,9 @@ $(document).ready(function(){
     $(this).tab('show');
 	});
 })
+
+$(document).ready(function(){
+	$('.cate-lv1-list > li > a').hover(function() {
+    $(this).tab('show');
+	});
+})

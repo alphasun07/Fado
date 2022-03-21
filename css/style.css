@@ -1521,7 +1521,7 @@ a, a:active, a:focus, a:hover {
     vertical-align: middle;
 }
 
-.country-item-outer.active:after {
+.country-item.active::after{
     background: #f3f5f7;
     content: "";
     display: block;
@@ -1532,7 +1532,9 @@ a, a:active, a:focus, a:hover {
     width: 1px;
     z-index: 10;
 }
-
+.country-item-outer{
+     position: relative;
+}
 .country-item.active:before {
     background: #ccd2dc;
     content: "";
@@ -1557,4 +1559,129 @@ a, a:active, a:focus, a:hover {
 }
 .country-item-outer{
     position: relative;
+}
+.cate-segment__col-1 {
+    background: rgba(152,165,185,.1);
+    border-right: 1px solid #ccd2dc;
+    display: flex;
+    flex: 0 0 288px;
+
+    width: 288px;
+}
+.cate-lv1-list {
+    list-style: none;
+    width: 100%;
+}
+.cate-view-all-outer {
+    border-bottom: 1px solid #ccd2dc;
+    margin-top: -8px;
+}
+.cate-view-all-outer .cate-lv1-item {
+    color: #2e2e2e;
+    padding: 10px 12px;
+}
+.cate-lv1-item {
+    align-items: center;
+    border-radius: 4px;
+    color: #000;
+    display: flex;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 12px;
+    position: relative;
+    transition: .3s;
+}
+.cate-view-all-outer .icon-col {
+    flex: 0 0 32px;
+    margin-right: 8px;
+    width: 32px;
+}
+.cate-lv1-item .icon-col {
+    color: #98a5b9;
+    flex: 0 0 20px;
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 16px;
+    min-width: 0;
+    position: relative;
+    text-align: center;
+    top: 1px;
+    width: 20px;
+}
+.cate-view-all-outer .title-col {
+    color: #2e2e2e;
+    font-weight: 800;
+}
+.cate-lv1-item .title-col {
+    color: #505f77;
+    flex: 1 1;
+    font-weight: 700;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cate-lv1-item .icon-right-col {
+    color: #ccd2dc;
+    margin-left: 6px;
+}
+.cate-lv1-item-outer-fado .cate-lv1-item.active {
+    background: #2e2e2e;
+    box-shadow: 0 16px 24px -8px rgb(0 0 0 / 40%);
+    color: #fff;
+}
+.cate-lv1-item-outer-fado:hover .cate-lv1-item.active .title-col,
+.cate-lv1-item-outer-fado:hover .cate-lv1-item.active .icon-col{
+    color: #fff;
+}
+.cate-segment__col-2{
+    width: 855px;
+    flex: 1 1;
+    padding: 16px 24px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.cate-lv2-panel .panel-head {
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cate-lv2-panel .panel-title {
+    color: #000;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cate-lv2-panel .panel-icon {
+    color: #000;
+    margin-left: 6px;
+    position: relative;
+    top: 1px;
+}
+.header-menu-nav .cate-lv3-list {
+    font-size: 13px;
+    line-height: 19px;
+}
+.header-menu-nav .cate-lv3-item-outer {
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cate-lv3-item {
+    color: #505f77;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 2;
 }

@@ -281,20 +281,20 @@
                     <div class="dropdown-menu menu-nav-detail container" aria-labelledby="menu-nav">
                         <div class="d-flex cate-segment__country-col">
                             <ul class="nav nav-tabs">
-                                <li class="active country-item-outer">
-                                    <a data-toggle="tab" href="#american" class="country-item">
+                                <li class="ountry-item-outer" >
+                                    <a data-bs-target="#american" class="country-item active" aria-current="page" data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="false">
                                         <span class="country-icon"><i class="icon-svg icon-svg-s18 "></i></span>
                                         <span class="country-name">Mỹ</span>
                                     </a>
                                 </li>
                                 <li class="country-item-outer">
-                                    <a data-toggle="tab" href="#japan" class="country-item">
+                                    <a data-bs-target="#japan" class="country-item" data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="false">
                                         <span class="country-icon"><i class="icon-svg-japan icon-svg-s18 "></i></span>
                                         <span class="country-name">Nhật</span>
                                     </a>
                                 </li>
                                 <li class="country-item-outer">
-                                    <a data-toggle="tab" href="#germany" class="country-item">
+                                    <a data-bs-target="#germany" class="country-item" data-bs-toggle="tab" type="button" role="tab" aria-controls="home" aria-selected="false">
                                         <span class="country-icon"><i class="icon-svg-germany icon-svg-s18 "></i></span>
                                         <span class="country-name">Đức</span>
                                     </a>
@@ -310,17 +310,302 @@
     
                             </ul>
                             <div class="tab-content">
-                                 <div id="american" class="tab-pane fade active"> 
-                                     <strong>Menu1</strong>
-                                     First tab content.
+                                 <div id="american" class="tab-pane fade show active cate-segment__col-1"> 
+                                    <ul class="cate-lv1-list nav nav-tabs">
+                                        <li class=" cate-view-all-outer cate-lv1-item-outer">
+                                            <a href="#" class="cate-lv1-item disabled">
+                                                <span class="icon-col">
+                                                    <img src="	https://stfe.fadoglobal.io/desktop/image/icon-svg/amazon-global-icon.svg?v=3.192.3.0" alt="">
+                                                </span>
+                                                <span class="title-col mx-1">NHẬP KHẨU TỪ MỸ</span>
+                                                <span><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class=" cate-lv1-item-outer-fado p-2 p-2">
+                                            <a href="list-product.html" class="cate-lv1-item active" data-bs-target="#electronic" aria-current="page" data-bs-toggle="tab" aria-controls="home" aria-selected="true">
+                                                <span class="icon-col">
+                                                    <i class="fa-solid fa-tv"></i>
+                                                </span>
+                                                <span class="title-col">Đồ điện tử và công nghệ</span>
+                                                <span class="icon-right-col"><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class=" cate-lv1-item-outer-fado p-2">
+                                            <a href="#" class="cate-lv1-item" data-bs-target="#healthy" aria-current="page" data-bs-toggle="tab" aria-controls="home" aria-selected="true">
+                                                <span class="icon-col">
+                                                    <i class="fa-solid fa-heart-pulse"></i>
+                                                </span>
+                                                <span class="title-col">Chăm sóc sức khỏe</span>
+                                                <span class="icon-right-col"><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class=" cate-lv1-item-outer-fado p-2">
+                                            <a href="#" class="cate-lv1-item">
+                                                <span class="icon-col">
+                                                    <i class="fa-solid fa-utensils"></i>
+                                                </span>
+                                                <span class="title-col">Thực phẩm, đồ uống</span>
+                                                <span class="icon-right-col"><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class=" cate-lv1-item-outer-fado p-2">
+                                            <a href="#" class="cate-lv1-item">
+                                                <span class="icon-col">
+                                                    <i class="fa-solid fa-crown"></i>
+                                                </span>
+                                                <span class="title-col">Kinh đô thời trang</span>
+                                                <span class="icon-right-col"><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class=" cate-lv1-item-outer-fado p-2">
+                                            <a href="#" class="cate-lv1-item">
+                                                <span class="icon-col">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="title-col">Ô tô - Xe máy, công nghiệp</span>
+                                                <span class="icon-right-col"><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class=" cate-lv1-item-outer-fado p-2">
+                                            <a href="#" class="cate-lv1-item">
+                                                <span class="icon-col">
+                                                    <i class="fa-solid fa-gamepad"></i>
+                                                </span>
+                                                <span class="title-col">Ô tô - Xe máy, công nghiệp</span>
+                                                <span class="icon-right-col"><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                  </div>
-                                 <div id="japan" class="tab-pane fade"> 
-                                     <strong>Menu2</strong>
-                                     Second tab content. 
-                                 </div>
-                                 <div id="australia" class="tab-pane fade">  
-                                     <strong>Menu3</strong>	
-                                     Third tab content.	
+                                
+                            </div>
+
+                            <!-- tab-content-child -->
+                            <div class="tab-content ">
+                                <div id="electronic" class="tab-pane fade show active cate-segment__col-2"> 
+                                   <div class="row d-flex">
+                                        <div class="col-md-4 cate-lv2-panel">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Máy tính và phụ kiện</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Máy tính - máy tính bảng</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Màn hình</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Webcam</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Phụ kiện máy tính</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-4 cate-lv2-panel">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Điện thoại và phụ kiện</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Điện thoại</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Phụ kiện cho điện thoại</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Ốp lưng và cường lực điện thoại</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Tai nghe cho điện thoại</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Điện thoại unlock</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-4 cate-lv2-panel">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Thiết bị kĩ thuật số</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Máy ảnh, Quay phim và Camera hành trình</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Loa Bluetooth</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Thiết bị game</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Kính thực tế ảo</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Phụ kiện kĩ thuật số</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-4 cate-lv2-panel mt-2">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Điện tử cho văn phòng</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Máy in</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Máy chiếu</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Máy hủy tài liệu</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Phụ kiện máy in</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Máy chấm công</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 cate-lv2-panel mt-2">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Tai nghe</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Tai nghe chụp tai (Over-Ear)</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Tai nghe nhét tai (In-Ear và Earbud)</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Tai nghe game</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Tai nghe thể thao</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 cate-lv2-panel mt-2">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Hệ thống nhà thông minh</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Tivi</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Âm thanh giải trí tại gia</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Nhà bếp hiện đại</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Đèn chiếu sáng thông minh</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Thiết bị chống trộm</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                                </div>      
+
+                                <div id="healthy" class="tab-pane fade show active cate-segment__col-2"> 
+                                    <div class="row d-flex">
+                                        <div class="col-md-4 cate-lv2-panel">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Thực phẩm chức năng</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Thức uống collagen</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Bổ sung vitamin</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Thực phẩm chức năng hỗ trợ giảm cân</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Hỗ trợ giảm cân</a>
+                                                </li>
+                                            </ul>
+                                         </div>
+                                        <div class="col-md-4 cate-lv2-panel">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Dụng cụ đo</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Nhiệt kế</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Theo dõi huyết áp</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Ốp lưng và cường lực điện thoại</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Hỗ trợ sức khỏe</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Chăm sóc răng miệng</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 cate-lv2-panel mt-2">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Thuốc hỗ trọ</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Thuốc trị cảm cúm</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Thuốc hỗ trọ giảm suy nhược</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Thuốc nhỏ mắt</a>
+                                                </li>
+                                            
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 cate-lv2-panel mt-2">
+                                            <a href="#" class="panel-head">
+                                                <div class="panel-title">Dụng cụ y tế</div>
+                                                <div class="panel-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="cate-lv3-list">
+                                                <li class="cate-lv3-item-outer">
+                                                    <a href="#" class="cate-lv3-item">Bộ sơ cứu</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Gạc bông thấm</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Phụ kiện hỗ trọ</a>
+                                                </li>
+                                                <li class="cate-lv3-item-outer mt-1">
+                                                    <a href="#" class="cate-lv3-item">Vòng đo huyết áp</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                  </div>
                             </div>
                         </div>
