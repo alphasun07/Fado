@@ -62,3 +62,10 @@ $(document).ready(function(){
     $('#cart_number').val(quantity);
   });
 });
+
+// tab menu
+$(document).ready(function(){
+	$('.nav-tabs > li > a').hover(function() {
+    $(this).tab('show');
+	});
+})

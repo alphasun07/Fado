@@ -274,28 +274,59 @@
             <div class="container">
                 <nav class="menu-nav dropdown">
                     <!-- danh mục -->
-                    <div class="category menu-nav-link-col dropdown-toggle" type="button" id="menu-nav" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-bars"></i>Danh mục
+                    <div class="category menu-nav-link-col" type="button" id="menu-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bars mx-1"></i>Danh mục
                         
                     </div>
                     <div class="dropdown-menu menu-nav-detail container" aria-labelledby="menu-nav">
-                        <div class="d-flex align-items-start">
-                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                        <div class="d-flex cate-segment__country-col">
+                            <ul class="nav nav-tabs">
+                                <li class="active country-item-outer">
+                                    <a data-toggle="tab" href="#american" class="country-item">
+                                        <span class="country-icon"><i class="icon-svg icon-svg-s18 "></i></span>
+                                        <span class="country-name">Mỹ</span>
+                                    </a>
+                                </li>
+                                <li class="country-item-outer">
+                                    <a data-toggle="tab" href="#japan" class="country-item">
+                                        <span class="country-icon"><i class="icon-svg-japan icon-svg-s18 "></i></span>
+                                        <span class="country-name">Nhật</span>
+                                    </a>
+                                </li>
+                                <li class="country-item-outer">
+                                    <a data-toggle="tab" href="#germany" class="country-item">
+                                        <span class="country-icon"><i class="icon-svg-germany icon-svg-s18 "></i></span>
+                                        <span class="country-name">Đức</span>
+                                    </a>
+                                </li>
+                                <li class="country-item-outer"><a data-toggle="tab" href="#england" class="country-item">
+                                    <span class="country-icon"><i class="icon-svg-england icon-svg-s18 "></i></span>
+                                    <span class="country-name">Anh</span>
+                                </a></li>
+                                <li class="country-item-outer"><a data-toggle="tab" href="#australia" class="country-item">
+                                    <span class="country-icon"><i class="icon-svg-australia icon-svg-s18 "></i></span>
+                                    <span class="country-name">Úc</span>
+                                </a></li>
+    
+                            </ul>
+                            <div class="tab-content">
+                                 <div id="american" class="tab-pane fade active"> 
+                                     <strong>Menu1</strong>
+                                     First tab content.
+                                 </div>
+                                 <div id="japan" class="tab-pane fade"> 
+                                     <strong>Menu2</strong>
+                                     Second tab content. 
+                                 </div>
+                                 <div id="australia" class="tab-pane fade">  
+                                     <strong>Menu3</strong>	
+                                     Third tab content.	
+                                 </div>
                             </div>
-                            <div class="tab-content" id="v-pills-tabContent">
-                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-                              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-                            </div>
-                          </div>
+                        </div>
+                        
                     </div>
                     
-
                     <!-- Designer -->
                     <div class="menu-nav-link-col">
                         <a href="" class="menu-nav-link-item">Designer Clothing</a>

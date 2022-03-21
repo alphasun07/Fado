@@ -1470,3 +1470,91 @@ a, a:active, a:focus, a:hover {
     margin-left: 17%;
     height: 390px;
 }
+.menu-nav-detail .nav {
+    display: block;
+}
+.menu-nav-detail .nav-tabs {
+    margin-left: 0;
+}
+.cate-segment__country-col {
+    border-right: 1px solid #ccd2dc;
+    flex: 0 0 97px;
+    width: 97px;
+}
+.country-item {
+    align-items: center;
+    color: #303846;
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    padding: 0 16px;
+    width: 97px;
+}
+.country-icon {
+    margin-right: 10px;
+}
+.icon-svg{
+    background-image: url(https://stfe.fadoglobal.io/desktop/image/icon-svg/flag-circle-us.svg);
+}
+.icon-svg-japan{
+    background-image: url(https://stfe.fadoglobal.io/desktop/image/icon-svg/flag-circle-jp.svg);
+}
+.icon-svg-germany{
+    background-image: url(https://stfe.fadoglobal.io/desktop/image/icon-svg/flag-circle-de.svg);
+}
+.icon-svg-england{
+    background-image: url(https://stfe.fadoglobal.io/desktop/image/icon-svg/flag-circle-uk.svg);
+}
+.icon-svg-australia{
+    background-image: url(	https://stfe.fadoglobal.io/desktop/image/icon-svg/flag-circle-au.svg);
+}
+.icon-svg-s18 {
+    height: 18px;
+    min-width: 18px;
+    width: 18px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    font-style: normal;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.country-item-outer.active:after {
+    background: #f3f5f7;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    width: 1px;
+    z-index: 10;
+}
+
+.country-item.active:before {
+    background: #ccd2dc;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    z-index: 10;
+}
+.country-item {
+    border-bottom: 1px solid #eaedf1;
+    list-style-type: none;
+    list-style: none;
+    position: relative;
+}
+.country-item.active {
+    background: rgba(152,165,185,.1);
+    border-bottom: 1px solid #ccd2dc;
+    font-weight: 700;
+}
+.country-item-outer{
+    position: relative;
+}
