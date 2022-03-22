@@ -44,37 +44,60 @@
                                           <li><a class="dropdown-item" href="#">Từ Đức</a></li>
                                           <li><a class="dropdown-item" href="#">Từ Anh</a></li>
                                           <li><a class="dropdown-item" href="#">Từ Úc</a></li>
-                                         
                                         </ul>
                                     </div>
                                     <!-- input -->
-                                    <input type="text" placeholder="Nhập link hoặc tên sản phẩm trên khắp thế giới ..." class="key-word">
-
+                                    <div class="dropdown">
+                                        <input type="text" placeholder="Nhập link hoặc tên sản phẩm trên khắp thế giới ..." class="key-word" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="dropdown-menu suggest-keywords" aria-labelledby="dropdownMenuButton1">
+                                        <!-- suggest -->
+                                            <!-- recently -->
+                                            <div class="suggest-keyword-group">
+                                                <div class="suggest-title d-flex flex-row">
+                                                    <div class="suggest-title-l">
+                                                        <i class="far fa-clock"></i>                                            
+                                                        <span>Tìm kiếm gần đây</span>
+                                                    </div>
+                                                    <div class="suggest-title-r float-lg-right">
+                                                        <span>Xóa lịch sử</span>
+                                                    </div>
+                                                </div>
+                                                <div class="keyword-list">
+                                                    <div class="btn btn-outline-dark rounded-pill">Túi</div>
+                                                </div>
+                                            </div>
+                                            <!-- popular -->
+                                            <div class="suggest-keyword-panel-group mt-3">
+                                                <div class="suggest-title d-flex flex-row ">
+                                                    <div class="suggest-title-l">
+                                                        <i class="fa-solid fa-chart-line"></i>                                         
+                                                        <span>Từ khóa tìm kiếm phổ biến</span>
+                                                    </div>
+                                                </div>
+                                                <div class="keyword-list keyword-list-panel d-flex">
+                                                    <div class="btn btn-outline-dark rounded-pill">Đồng hồ Hamiton</div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Máy ảnh canon</div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Home decore</div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Apple Watch 4</div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Airpods </div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Đồ điện tử</div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Máy pha cà phê</div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Thiết bị thông minh</div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Smart home </div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Laptop</div>
+                                                    <div class="btn btn-outline-dark rounded-pill">Laptop</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
                                 </div>
                             </div>
-
-                            <!-- suggest -->
-                            <!-- <div class="suggest-keywords">
-                                <div class="suggest-keyword-group">
-                                    <div class="suggest-title d-flex flex-row">
-                                        <div class="suggest-title-l">
-                                            <i class="far fa-clock"></i>                                            <span>Tìm kiếm gần đây</span>
-                                        </div>
-                                        <div class="suggest-title-r float-lg-right">
-                                            <span>Xóa lịch sử</span>
-                                        </div>
-                                    </div>
-                                    <div class="keyword-list"></div>
-                                </div>
-                                <div class="suggest-keyword-group">
-                                    <div class="suggest-title"></div>
-                                    <div class="keyword-list"></div>
-                                </div>
-                            </div> -->
+                            
                             <button type="submit" class="submit-btn">
                                 <span class="submit-btn-bg"></span>
                                 <span class="submit-btn-label">
-                                    <i class="fas fa-search"></i>                                </span>
+                                    <i class="fas fa-search"></i>                                
+                                </span>
                             </button>
                         </div>
                     </div>
@@ -331,7 +354,7 @@
                                             </a>
                                         </li>
                                         <li class=" cate-lv1-item-outer-fado p-2">
-                                            <a href="#" class="cate-lv1-item" data-bs-target="#healthy" aria-current="page" data-bs-toggle="tab" aria-controls="home" aria-selected="true">
+                                            <a href="#" class="cate-lv1-item" data-bs-target="#healthy" data-bs-toggle="tab" aria-controls="home" aria-selected="true">
                                                 <span class="icon-col">
                                                     <i class="fa-solid fa-heart-pulse"></i>
                                                 </span>

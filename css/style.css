@@ -70,7 +70,10 @@ a, a:active, a:focus, a:hover {
     height: 38px;
     margin-right: 16px;
     padding: 0 72px 0 16px;
-    width: 100%;
+    width: 150%;
+}
+.input-group_search .key-word:focus{
+    outline: none;
 }
 .header-main-block .search-form .submit-btn {
     align-items: center;
@@ -660,6 +663,7 @@ a, a:active, a:focus, a:hover {
 .search-trending-item:hover {
     box-shadow: 0 24px 24px -8px rgb(204 210 220 / 43%);
 }
+
 .home-feature-department {
     margin: 40px 0 32px;
 }
@@ -1004,8 +1008,7 @@ a, a:active, a:focus, a:hover {
     height: 3px;
     left: 0;
     position: absolute;
-    width: 100%;
-}
+ }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     border-color: transparent !important;
 }
@@ -1684,4 +1687,47 @@ ul{
     white-space: nowrap;
     font-size: 14px;
     line-height: 2;
+}
+.suggest-keywords {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgb(48 56 70 / 40%);
+    left: -28% !important;
+    padding: 16px;
+    position: absolute;
+    width: 200% !important;
+}
+.suggest-title {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.suggest-title-r {
+    margin-left: auto;
+    cursor: pointer;
+}
+.keyword-list .btn {
+    font-size: 12px !important;
+    padding: 6px 13px;
+    line-height: 1;
+}
+.suggest-keywords .suggest-keyword-group{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaedf1;
+}
+.keyword-list-panel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px -2px 0;
+}
+.keyword-list-panel .btn{
+    max-height: 24px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin:  8px 4px 0 0;
 }
