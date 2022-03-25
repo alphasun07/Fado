@@ -55,6 +55,7 @@ a, a:active, a:focus, a:hover {
 .search-form .inp-search {
     height: 40px;
     width: 100%;
+    position: absolute;
 }
 .search-form .inp-search .input-group_search{
     border: 1px solid #000;
@@ -74,6 +75,12 @@ a, a:active, a:focus, a:hover {
 }
 .input-group_search .key-word:focus{
     outline: none;
+}
+.search-col .inp-search:focus-within{
+    border: 3px solid #1c1a1a;
+    border-radius: 30px;
+    width: 100%;
+    height: 45px;
 }
 .header-main-block .search-form .submit-btn {
     align-items: center;
@@ -104,7 +111,7 @@ a, a:active, a:focus, a:hover {
     transition: .3s;
     width: 42px;
 }
-.header-main-block .search-form .submit-btn-bg:before {
+.header-main-block .search-form .key-word:focus .submit-btn-bg:before {
     background: #5c5c5c;
     bottom: 0;
     content: "";
@@ -114,7 +121,7 @@ a, a:active, a:focus, a:hover {
     transform: skewX(-10deg);
     width: 17px;
 }
-.header-main-block .search-form .submit-btn-bg:after {
+.header-main-block .search-form .key-word:focus.submit-btn-bg:after {
     background: #2e2e2e;
     bottom: 0;
     content: "";
@@ -127,12 +134,6 @@ a, a:active, a:focus, a:hover {
 .header-main-block .search-form .submit-btn-label {
     position: relative;
     z-index: 2;
-}
-.input-group_search:focus{
-    border: #f01010;
-}
-.input-group_search input[type=text]:focus{
-    border: 0;
 }
 .user-col {
     display: flex;
@@ -1318,6 +1319,9 @@ a, a:active, a:focus, a:hover {
     position: relative;
     font-size: 14px;
     line-height: 21px;
+}
+.register-mail-form input:focus{
+    outline: none;
 }
 .footer-section .footer-head-input-email {
     border: 0;
